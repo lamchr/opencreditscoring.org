@@ -44,9 +44,6 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(15,118,110,.24),transparent_42%),linear-gradient(180deg,rgba(255,255,255,.08),transparent_38%)]" />
         <div className="mx-auto grid max-w-6xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:items-center lg:pb-20">
           <div data-aos="fade-up">
-            <p className="mb-5 inline-flex rounded-full border border-white/15 bg-white/8 px-3 py-1 text-sm font-medium text-teal-100">
-              Transparent infrastructure for responsible lending
-            </p>
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] md:text-6xl">
               Open Credit Scoring
             </h1>
@@ -88,10 +85,7 @@ export default function Home() {
       <section id="model" className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase text-teal-700">
-              Model governance
-            </p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+            <h2 className="text-3xl font-bold md:text-4xl">
               A scoring system people can inspect before they trust it.
             </h2>
           </div>
@@ -115,10 +109,7 @@ export default function Home() {
       <section className="bg-slate-100 py-16 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase text-sky-700">
-              Shared operating layer
-            </p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+            <h2 className="text-3xl font-bold md:text-4xl">
               Built for lenders, researchers, and civic technology teams.
             </h2>
             <p className="mt-5 leading-7 text-slate-700">
@@ -162,10 +153,7 @@ export default function Home() {
       <section id="pilot" className="bg-slate-950 py-16 text-white md:py-20">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase text-teal-200">
-              Launch responsibly
-            </p>
-            <h2 className="mt-3 max-w-3xl text-3xl font-bold md:text-4xl">
+            <h2 className="max-w-3xl text-3xl font-bold md:text-4xl">
               Bring transparent credit scoring into your next underwriting
               pilot.
             </h2>
