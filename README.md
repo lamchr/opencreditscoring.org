@@ -1,91 +1,99 @@
-# Free Tailwind landing page template
+# Open Credit Scoring
 
-![Simple TailwindCSS template preview](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/f9a98fab-a1bc-4fb5-8572-4de0b6bd932a)
+Website for Open Credit Scoring, a transparent credit scoring initiative focused on explainable models, auditable decisions, and responsible lending infrastructure.
 
-**Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more.
+Live site: https://lamchr.github.io/opencreditscoring.org/
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+## Overview
 
-Use it for whatever you want, and be sure to reach us out on X if you build anything cool/useful with it.
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
+This is a static Next.js site built with the App Router and Tailwind CSS. It is configured for GitHub Pages using Next's static export mode.
 
-_Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/tailwind-landing-page-template/releases/tag/1.3.3)._
+The homepage includes:
 
-## Live demo
+- A landing page for Open Credit Scoring
+- A model workspace preview
+- Governance and auditability messaging
+- Platform capability sections
+- A pilot/contact call to action
 
-Check the live demo here 👉️ [https://simple.cruip.com/](https://simple.cruip.com/)
+## Tech Stack
 
-## Simple Pro
+- Next.js 15
+- React 19
+- Tailwind CSS 4
+- TypeScript
+- GitHub Pages
+- GitHub Actions
 
-[![Simple Pro](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/992be2ba-3de7-4838-be41-12e85686c193)](https://cruip.com/)
+## Local Development
 
-## Design files
-
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3HOZMpf
-
-## Usage
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### Getting Started
-
-First, run the development server:
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+Start the development server:
+
+```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Create a production static export:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The exported site is written to `out/`.
 
-### Learn More
+For GitHub Pages project-site paths, the workflow sets:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+GITHUB_PAGES=true
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+That enables the repository base path in `next.config.js`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-### Deploy on Vercel
+Deployment is handled by GitHub Actions:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+.github/workflows/deploy-pages.yml
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+On each push to `main`, the workflow:
 
-### Support notes
+1. Installs dependencies with pnpm.
+2. Builds the static Next.js export.
+3. Uploads the `out/` directory as a GitHub Pages artifact.
+4. Deploys the artifact to GitHub Pages.
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+GitHub Pages should be configured with:
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+- Source: GitHub Actions
+- Branch: `main`
 
-## Credits
+## Project Structure
 
-- [Nucleo](https://nucleoapp.com/)
+```text
+app/(default)/page.tsx       Homepage content
+app/layout.tsx               Root layout and metadata
+app/css/style.css            Tailwind imports and theme tokens
+components/ui/header.tsx     Site navigation
+components/ui/footer.tsx     Footer
+components/ui/logo.tsx       Brand mark
+public/.nojekyll             Required for GitHub Pages asset paths
+next.config.js               Static export and Pages base path config
+```
 
-## Terms and License
+## Notes
 
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
+GitHub Pages only serves static files, so this project does not include API routes or server-rendered pages.
 
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
-
+The project started from the Cruip Simple Light template and has been customized for Open Credit Scoring.
