@@ -72,13 +72,13 @@ export default function Home() {
           </div>
 
           <div
-            className="overflow-hidden rounded-lg border border-white/10 bg-white/[.06] p-2 shadow-2xl shadow-black/30"
+            className="overflow-hidden rounded-lg shadow-2xl shadow-black/30"
             data-aos="fade-left"
           >
             <Image
               src={HeroImage}
               alt="Causal model positioned between antidiscrimination law and supervised machine learning"
-              className="h-auto w-full rounded-md"
+              className="h-auto w-full"
               priority
             />
           </div>
