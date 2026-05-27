@@ -2,9 +2,10 @@ import Link from "next/link";
 import Logo from "./logo";
 
 const navItems = [
-  ["Model", "#model"],
-  ["Pilot", "#pilot"],
-  ["Contact", "mailto:hello@opencreditscoring.org"],
+  ["Research", "/research"],
+  ["Projects", "/projects"],
+  ["News", "/news"],
+  ["About", "/about"],
 ];
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
         <Logo />
 
-        <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
+        <nav className="flex items-center gap-4 text-sm font-semibold sm:gap-6">
           {navItems.map(([label, href]) => (
             <Link
               className="text-slate-600 transition hover:text-slate-950"
@@ -24,13 +25,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-
-        <Link
-          href="#pilot"
-          className="btn-sm bg-slate-950 text-white shadow-none hover:bg-slate-800"
-        >
-          Start pilot
-        </Link>
       </div>
     </header>
   );
