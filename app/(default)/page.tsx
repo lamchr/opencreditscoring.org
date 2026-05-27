@@ -52,20 +52,6 @@ export default function Home() {
               inspectable, explainable, and easier to govern without slowing
               down modern underwriting teams.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                className="btn bg-teal-400 text-slate-950 shadow-teal-950/20 hover:bg-teal-300"
-                href="#pilot"
-              >
-                Start a pilot
-              </a>
-              <a
-                className="btn border border-white/15 bg-white/10 text-white shadow-none hover:bg-white/15"
-                href="#model"
-              >
-                Explore the model
-              </a>
-            </div>
           </div>
 
           <div
