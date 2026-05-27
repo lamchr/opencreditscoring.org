@@ -2,9 +2,10 @@ import Link from "next/link";
 import Logo from "./logo";
 
 const links = [
-  ["Model", "#model"],
-  ["Pilot", "#pilot"],
-  ["Email", "mailto:hello@opencreditscoring.org"],
+  ["Research", "/research"],
+  ["Projects", "/projects"],
+  ["News", "/news"],
+  ["About", "/about"],
 ];
 
 export default function Footer({ border = false }: { border?: boolean }) {
