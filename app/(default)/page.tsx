@@ -40,21 +40,22 @@ const metrics = [
 export default function Home() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-slate-950 pt-28 text-white md:pt-36">
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(15,118,110,.24),transparent_42%),linear-gradient(180deg,rgba(255,255,255,.08),transparent_38%)]" />
+      <section className="relative isolate overflow-hidden bg-midnight pt-28 text-white md:pt-36">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(20,184,166,.22),transparent_46%),linear-gradient(180deg,rgba(248,250,252,.10),transparent_40%)]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-teal-accent/40 to-transparent" />
         <div className="mx-auto grid max-w-6xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:items-center lg:pb-20">
           <div data-aos="fade-up">
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] md:text-6xl">
               Open Credit Scoring
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-surface/82">
               An AI research and standards initiative to develop the
               mathematical foundations for trustworthy credit decisions.
             </p>
           </div>
 
           <div
-            className="overflow-hidden rounded-lg shadow-2xl shadow-black/30"
+            className="overflow-hidden rounded-md shadow-xl shadow-midnight/30 ring-1 ring-teal-accent/15"
             data-aos="fade-left"
           >
             <Image
@@ -67,22 +68,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="model" className="bg-white py-16 md:py-20">
+      <section id="model" className="bg-surface py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold md:text-4xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
               A scoring system people can inspect before they trust it.
             </h2>
           </div>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {principles.map((item) => (
               <article
-                className="rounded-lg border border-slate-200 bg-slate-50 p-6"
+                className="rounded-md border border-line bg-white/80 p-6 shadow-sm shadow-midnight/[0.03]"
                 key={item.title}
                 data-aos="fade-up"
               >
-                <h3 className="text-lg font-bold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <h3 className="text-lg font-bold text-midnight">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-body">
                   {item.text}
                 </p>
               </article>
@@ -91,13 +94,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-100 py-16 md:py-20">
+      <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <div>
-            <h2 className="text-3xl font-bold md:text-4xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
               Built for lenders, researchers, and civic technology teams.
             </h2>
-            <p className="mt-5 leading-7 text-slate-700">
+            <p className="mt-5 leading-7 text-body">
               Open Credit Scoring gives teams a common language for credit data,
               model validation, and borrower-facing explanations. Use it to
               benchmark internal models, launch transparent pilots, or publish
@@ -107,7 +110,7 @@ export default function Home() {
           <div className="grid gap-3 sm:grid-cols-2">
             {modules.map((module) => (
               <div
-                className="rounded-lg border border-slate-200 bg-white p-4 font-semibold text-slate-800 shadow-sm"
+                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03] transition hover:border-teal-accent/50"
                 key={module}
                 data-aos="fade-up"
               >
@@ -118,24 +121,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-surface py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-4 md:grid-cols-3">
             {metrics.map(([value, label]) => (
               <div
-                className="border-l-4 border-amber-400 bg-slate-50 p-6"
+                className="rounded-md border border-line border-l-4 border-l-gold bg-white/80 p-6 shadow-sm shadow-midnight/[0.03]"
                 key={value}
                 data-aos="fade-up"
               >
-                <p className="text-4xl font-bold text-slate-950">{value}</p>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{label}</p>
+                <p className="text-4xl font-bold text-midnight">{value}</p>
+                <p className="mt-3 text-sm leading-6 text-body">{label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="pilot" className="bg-slate-950 py-16 text-white md:py-20">
+      <section
+        id="pilot"
+        className="bg-[linear-gradient(135deg,#0B1F33_0%,#0D2A3D_58%,#0B1F33_100%)] py-16 text-white md:py-20"
+      >
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <h2 className="max-w-3xl text-3xl font-bold md:text-4xl">
@@ -144,7 +150,7 @@ export default function Home() {
             </h2>
           </div>
           <a
-            className="btn bg-white text-slate-950 shadow-none hover:bg-slate-100"
+            className="btn bg-teal-accent text-midnight shadow-none hover:bg-teal-accent/90"
             href="mailto:hello@opencreditscoring.org"
           >
             Contact the team

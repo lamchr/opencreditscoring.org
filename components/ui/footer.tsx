@@ -10,16 +10,16 @@ const links = [
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
-    <footer className="bg-white">
+    <footer className="bg-surface">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
           className={`flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between ${
-            border ? "border-t border-slate-200" : ""
+            border ? "border-t border-line" : ""
           }`}
         >
           <div>
             <Logo />
-            <p className="mt-3 max-w-md text-sm leading-6 text-slate-600">
+            <p className="mt-3 max-w-md text-sm leading-6 text-body">
               Open infrastructure for transparent, auditable, and explainable
               credit scoring.
             </p>
@@ -27,7 +27,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="flex flex-wrap gap-5 text-sm font-semibold">
             {links.map(([label, href]) => (
               <Link
-                className="text-slate-600 transition hover:text-slate-950"
+                className="text-body transition hover:text-teal-accent"
                 href={href}
                 key={label}
               >
@@ -36,8 +36,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
             ))}
           </div>
         </div>
-        <div className="border-t border-slate-200 py-5 text-sm text-slate-500">
-          © 2026 Open Credit Scoring. All rights reserved.
+        <div className="border-t border-line py-5 text-sm text-body">
+          &copy; 2026 Open Credit Scoring. All rights reserved.
         </div>
       </div>
     </footer>

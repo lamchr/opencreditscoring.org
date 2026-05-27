@@ -10,14 +10,14 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="fixed top-0 z-30 w-full border-b border-slate-200 bg-white/95 shadow-lg shadow-slate-950/[0.04] backdrop-blur">
+    <header className="fixed top-0 z-30 w-full border-b border-line bg-surface/95 shadow-sm shadow-midnight/[0.04] backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
         <Logo />
 
         <nav className="flex items-center gap-4 text-sm font-semibold sm:gap-6">
           {navItems.map(([label, href]) => (
             <Link
-              className="text-slate-600 transition hover:text-slate-950"
+              className="text-body transition hover:text-teal-accent"
               href={href}
               key={label}
             >
