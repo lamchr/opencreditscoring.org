@@ -1,15 +1,11 @@
+import Image from "next/image";
+import HeroImage from "@/public/images/cylinder-and-shadows.png";
+
 export const metadata = {
   title: "Open Credit Scoring",
   description:
     "Transparent credit scoring infrastructure for lenders, researchers, and public-interest builders.",
 };
-
-const modelInputs = [
-  { label: "Payment history", value: "42%", tone: "bg-emerald-500" },
-  { label: "Cash-flow stability", value: "24%", tone: "bg-sky-500" },
-  { label: "Debt capacity", value: "19%", tone: "bg-amber-500" },
-  { label: "Credit mix", value: "15%", tone: "bg-rose-500" },
-];
 
 const principles = [
   {
@@ -76,54 +72,15 @@ export default function Home() {
           </div>
 
           <div
-            className="rounded-lg border border-white/10 bg-white/[.06] p-4 shadow-2xl shadow-black/30"
+            className="overflow-hidden rounded-lg border border-white/10 bg-white/[.06] p-2 shadow-2xl shadow-black/30"
             data-aos="fade-left"
           >
-            <div className="rounded-md bg-slate-100 p-4 text-slate-950">
-              <div className="flex items-center justify-between border-b border-slate-200 pb-4">
-                <div>
-                  <p className="text-sm font-semibold text-slate-500">
-                    Score workspace
-                  </p>
-                  <p className="text-2xl font-bold">742</p>
-                </div>
-                <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800">
-                  Low risk
-                </span>
-              </div>
-              <div className="mt-5 space-y-4">
-                {modelInputs.map((item) => (
-                  <div key={item.label}>
-                    <div className="mb-2 flex items-center justify-between text-sm">
-                      <span className="font-medium text-slate-700">
-                        {item.label}
-                      </span>
-                      <span className="font-semibold">{item.value}</span>
-                    </div>
-                    <div className="h-2 rounded-full bg-slate-200">
-                      <div
-                        className={`h-2 rounded-full ${item.tone}`}
-                        style={{ width: item.value }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 grid grid-cols-2 gap-3">
-                <div className="rounded-md border border-slate-200 bg-white p-3">
-                  <p className="text-xs font-semibold uppercase text-slate-500">
-                    Drift
-                  </p>
-                  <p className="mt-1 text-xl font-bold">0.03</p>
-                </div>
-                <div className="rounded-md border border-slate-200 bg-white p-3">
-                  <p className="text-xs font-semibold uppercase text-slate-500">
-                    Version
-                  </p>
-                  <p className="mt-1 text-xl font-bold">v2.7</p>
-                </div>
-              </div>
-            </div>
+            <Image
+              src={HeroImage}
+              alt="Causal model positioned between antidiscrimination law and supervised machine learning"
+              className="h-auto w-full rounded-md"
+              priority
+            />
           </div>
         </div>
       </section>
