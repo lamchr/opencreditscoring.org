@@ -48,9 +48,8 @@ export default function Home() {
               Open Credit Scoring
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              A public-interest credit scoring platform that makes risk models
-              inspectable, explainable, and easier to govern without slowing
-              down modern underwriting teams.
+              An open AI research and standards initiative to develop the
+              mathematical foundations for trustworthy credit decisions.
             </p>
           </div>
 
