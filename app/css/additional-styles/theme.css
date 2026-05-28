@@ -1,13 +1,6 @@
 /* Scrollspy links */
 [data-scrollspy-link].scrollspy-active {
-  @apply text-blue-500 font-medium;
-}
-
-/* Custom AOS animations */
-[data-aos="zoom-y-out"] {
-transform: scaleX(1.03);
-opacity: 0;
-transition-property: transform, opacity;
+  @apply text-teal-accent font-medium;
 }
 
 @media screen {
