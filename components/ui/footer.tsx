@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from "./logo";
 
 const links = [
-  ["Open Credit Scoring", "/what-is-open-credit-scoring"],
+  ["Open Credit Scoring", "/open-credit-scoring"],
   ["Research", "/research"],
   ["Projects", "/projects"],
   ["News", "/news"],

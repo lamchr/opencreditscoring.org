@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "What is Open Credit Scoring? - Open Credit Scoring",
+  title: "Open Credit Scoring - Open Credit Scoring",
   description:
     "An overview of Open Credit Scoring as a research and standards initiative for trustworthy credit decisions.",
 };
@@ -19,13 +19,13 @@ const foundations = [
   },
 ];
 
-export default function WhatIsOpenCreditScoringPage() {
+export default function OpenCreditScoringPage() {
   return (
     <section className="bg-surface pb-16 pt-36 md:pb-20 md:pt-40">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold leading-[1.02] text-midnight md:text-6xl">
-            What is Open Credit Scoring?
+            Open Credit Scoring
           </h1>
           <p className="mt-6 text-lg leading-8 text-body">
             Open Credit Scoring is an AI research and standards initiative to
