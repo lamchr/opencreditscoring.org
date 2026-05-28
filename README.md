@@ -1,99 +1,104 @@
 # Open Credit Scoring
 
-Website for Open Credit Scoring, a transparent credit scoring initiative focused on explainable models, auditable decisions, and responsible lending infrastructure.
+Open Credit Scoring is an open research and standards initiative focused on building more transparent, accountable, and trustworthy AI-driven credit decision systems.
 
-Live site: https://lamchr.github.io/opencreditscoring.org/
+The initiative explores how causal AI, systems thinking, and open technical standards can help modernize credit scoring and underwriting for high-stakes financial applications.
+
+Website: https://lamchr.github.io/opencreditscoring.org/
+
+---
 
 ## Overview
 
-This is a static Next.js site built with the App Router and Tailwind CSS. It is configured for GitHub Pages using Next's static export mode.
+Modern credit scoring systems increasingly rely on artificial intelligence and machine learning.
 
-The homepage includes:
+While these systems may improve predictive performance, they also introduce important challenges related to:
 
-- A landing page for Open Credit Scoring
-- A model workspace preview
-- Governance and auditability messaging
-- Platform capability sections
-- A pilot/contact call to action
+* Transparency
+* Fairness
+* Accountability
+* Explainability
+* Institutional trust
+* Governance of high-stakes AI systems
 
-## Tech Stack
+Open Credit Scoring explores a different technical direction based on causal reasoning and open governance frameworks rather than purely statistical black-box prediction systems.
 
-- Next.js 15
-- React 19
-- Tailwind CSS 4
-- TypeScript
-- GitHub Pages
-- GitHub Actions
+---
 
-## Local Development
+## Research Areas
 
-Install dependencies:
+Current research areas include:
 
-```bash
-pnpm install
-```
+* Causal AI for credit underwriting
+* Fair lending and antidiscrimination analysis
+* Causal fairness graphs
+* Alternative data evaluation
+* Causal debiasing
+* Explainable and governable AI systems
+* Systems thinking for financial AI
+* Open standards for trustworthy AI
 
-Start the development server:
+---
 
-```bash
-pnpm dev
-```
+## Research Direction
 
-Open http://localhost:3000.
+The initiative investigates the transition from:
 
-## Build
+* Statistical machine learning -> Causal AI
+* Prediction -> Control and simulation
+* Fairness metrics -> Causal fairness analysis
+* Explainability -> Governance architectures
 
-Create a production static export:
+The goal is not simply to build another proprietary credit score.
 
-```bash
-pnpm build
-```
+The goal is to help establish an open technical foundation for trustworthy financial AI systems.
 
-The exported site is written to `out/`.
+---
 
-For GitHub Pages project-site paths, the workflow sets:
+## Standards and Governance
 
-```bash
-GITHUB_PAGES=true
-```
+Open Credit Scoring supports the development of open technical standards and governance frameworks for high-stakes AI systems.
 
-That enables the repository base path in `next.config.js`.
+Areas of interest include:
 
-## Deployment
+* AI transparency
+* Causal model interoperability
+* Fairness evaluation methodologies
+* Alternative data governance
+* Human oversight mechanisms
+* Benchmark and testing frameworks
+* Institutional accountability structures
 
-Deployment is handled by GitHub Actions:
+---
 
-```text
-.github/workflows/deploy-pages.yml
-```
+## Long-Term Vision
 
-On each push to `main`, the workflow:
+We believe the future of financial AI requires systems that are:
 
-1. Installs dependencies with pnpm.
-2. Builds the static Next.js export.
-3. Uploads the `out/` directory as a GitHub Pages artifact.
-4. Deploys the artifact to GitHub Pages.
+* Scientifically grounded
+* Transparent by design
+* Explainable and governable
+* Institutionally accountable
+* Safe for high-stakes use cases
 
-GitHub Pages should be configured with:
+Open Credit Scoring exists to help advance that transition.
 
-- Source: GitHub Actions
-- Branch: `main`
+---
 
-## Project Structure
+## Contributing
 
-```text
-app/(default)/page.tsx       Homepage content
-app/layout.tsx               Root layout and metadata
-app/css/style.css            Tailwind imports and theme tokens
-components/ui/header.tsx     Site navigation
-components/ui/footer.tsx     Footer
-components/ui/logo.tsx       Brand mark
-public/.nojekyll             Required for GitHub Pages asset paths
-next.config.js               Static export and Pages base path config
-```
+The initiative welcomes collaboration from:
 
-## Notes
+* Researchers
+* Financial institutions
+* Standards organizations
+* Policymakers
+* Consumer advocates
+* Technology companies
+* Open-source contributors
 
-GitHub Pages only serves static files, so this project does not include API routes or server-rendered pages.
+---
 
-The project started from the Cruip Simple Light template and has been customized for Open Credit Scoring.
+## License
+
+This repository contains website and research initiative materials for Open Credit Scoring.
