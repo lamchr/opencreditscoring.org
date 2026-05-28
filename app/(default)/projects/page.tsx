@@ -82,7 +82,7 @@ const futureDirections = [
   "AI safety for financial systems",
   "Human-centered underwriting systems",
   "Simulation environments for financial AI",
-  "Causal world models for socioeconomic systems",
+  "Causal decision models for socioeconomic systems",
 ];
 
 function CardGrid({ items }: { items: string[] }) {

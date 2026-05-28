@@ -1,11 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
+import type { ReactNode } from "react";
 import HeroImage from "@/public/images/cylinder-and-shadows.png";
 
 export const metadata = {
   title: "Open Credit Scoring",
   description:
-    "An open research and standards initiative for trustworthy AI-driven credit decisions.",
+    "Building open infrastructure for trustworthy AI credit decision systems.",
 };
+
+const proprietaryCards = [
+  "Closed systems limit reproducibility",
+  "Incumbents optimize for stability, not paradigm shifts",
+  "Trustworthy AI requires open technical infrastructure",
+];
 
 const decisionQuestions = [
   "Why was a decision made?",
@@ -33,6 +41,17 @@ const audience = [
   "Technology builders",
 ];
 
+function LightCard({ children }: { children: ReactNode }) {
+  return (
+    <div
+      className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
+      data-aos="fade-up"
+    >
+      {children}
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -45,8 +64,12 @@ export default function Home() {
               Open Credit Scoring
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-surface/82">
-              An open research and standards initiative for trustworthy
-              AI-driven credit decisions.
+              Building open infrastructure for trustworthy AI credit decision
+              systems.
+            </p>
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-surface/82">
+              Open Credit Scoring advances causal AI, open standards, and
+              governance-by-design for credit scoring and underwriting.
             </p>
           </div>
 
@@ -68,30 +91,45 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">
-              Credit scoring needs a new foundation.
+              Why proprietary credit scoring slows innovation
             </h2>
-            <div className="mt-5 space-y-5 leading-7 text-body">
-              <p>
-                Credit scores shape access to mortgages, auto loans, credit
-                cards, housing, and economic opportunity.
-              </p>
-              <p>
-                Yet today’s credit scoring systems are often proprietary,
-                difficult to inspect, and hard to govern. New AI underwriting
-                systems may improve prediction, but they can also make
-                transparency, fairness, and accountability harder.
-              </p>
-              <p>
-                Open Credit Scoring explores a different path: using causal AI,
-                systems thinking, and open standards to build financial decision
-                systems that can be understood, evaluated, and trusted.
-              </p>
-            </div>
+            <p className="mt-5 leading-7 text-body">
+              Credit scoring has become critical financial infrastructure, but
+              much of today's infrastructure remains proprietary, opaque, and
+              difficult to independently evaluate. Closed scoring systems can
+              limit scientific reproducibility, slow ecosystem-wide innovation,
+              and make it harder to build AI systems that are transparent,
+              governable, and trusted.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-3 md:grid-cols-3">
+            {proprietaryCards.map((card) => (
+              <LightCard key={card}>{card}</LightCard>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
+              Credit scoring needs a new foundation.
+            </h2>
+            <p className="mt-5 leading-7 text-body">
+              Credit scores shape access to mortgages, auto loans, credit
+              cards, housing, and economic opportunity. Yet the technical
+              infrastructure behind these decisions remains difficult to
+              inspect, contest, and govern. As AI enters underwriting, the
+              challenge is no longer just better prediction. The challenge is
+              building decision systems that are transparent, causal, auditable,
+              and safe by design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-16 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <div>
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">
@@ -115,50 +153,42 @@ export default function Home() {
           </div>
           <div className="grid gap-3">
             {decisionQuestions.map((question) => (
-              <div
-                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
-                key={question}
-                data-aos="fade-up"
-              >
-                {question}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-surface py-16 md:py-20">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
-          <div>
-            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
-              Our approach
-            </h2>
-            <div className="mt-5 space-y-5 leading-7 text-body">
-              <p>We are developing a research agenda around:</p>
-              <p>
-                The goal is not simply to create another credit score.
-              </p>
-              <p>
-                The goal is to help establish an open technical foundation for
-                trustworthy financial AI.
-              </p>
-            </div>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {approachAreas.map((area) => (
-              <div
-                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03] transition hover:border-teal-accent/50"
-                key={area}
-                data-aos="fade-up"
-              >
-                {area}
-              </div>
+              <LightCard key={question}>{question}</LightCard>
             ))}
           </div>
         </div>
       </section>
 
       <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
+              Our approach
+            </h2>
+            <div className="mt-5 space-y-5 leading-7 text-body">
+              <p>The goal is not simply to create another credit score.</p>
+              <p>
+                The goal is to help establish an open technical foundation for
+                trustworthy financial AI.
+              </p>
+              <p>We are developing a research agenda around:</p>
+              <Link
+                className="inline-flex rounded-md bg-teal-accent px-5 py-3 text-sm font-bold text-midnight shadow-sm shadow-teal-accent/20 transition hover:bg-teal-accent/85"
+                href="/standards/"
+              >
+                Explore the Standards Work
+              </Link>
+            </div>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {approachAreas.map((area) => (
+              <LightCard key={area}>{area}</LightCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">

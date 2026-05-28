@@ -22,8 +22,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div>
             <Logo />
             <p className="mt-3 max-w-md text-sm leading-6 text-body">
-              Open infrastructure for transparent, auditable, and explainable
-              credit scoring.
+              Open infrastructure for causal, transparent, auditable, and
+              governable credit decision systems.
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm font-semibold">

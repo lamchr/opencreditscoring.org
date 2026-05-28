@@ -71,6 +71,24 @@ export default function ResearchPage() {
       </section>
 
       <section className="bg-surface py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
+              From proprietary black boxes to open scientific infrastructure
+            </h2>
+            <p className="mt-5 leading-7 text-body">
+              Next-generation financial AI cannot be built only through closed
+              model development. It requires shared benchmarks, transparent
+              assumptions, interoperable governance frameworks, and reproducible
+              research. Open Credit Scoring focuses on the scientific and
+              technical infrastructure needed to move credit decision systems
+              beyond opaque prediction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <div>
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">

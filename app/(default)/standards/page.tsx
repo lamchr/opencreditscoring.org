@@ -130,6 +130,12 @@ export default function StandardsPage() {
                 AI systems that are transparent, explainable, accountable,
                 interoperable, governable, and safe by design.
               </p>
+              <p>
+                The goal is not to eliminate proprietary innovation. The goal
+                is to define open interfaces, evaluation methods, governance
+                layers, and technical safeguards that allow innovation to scale
+                responsibly in high-stakes financial systems.
+              </p>
             </div>
           </div>
           <CardGrid items={standardGoals} />
