@@ -5,6 +5,7 @@ const navItems = [
   ["Open Credit Scoring", "/open-credit-scoring"],
   ["Research", "/research"],
   ["Projects", "/projects"],
+  ["Standards", "/standards"],
   ["News", "/news"],
   ["About", "/about"],
 ];
