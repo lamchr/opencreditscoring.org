@@ -4,7 +4,7 @@ Open Credit Scoring is an open research and standards initiative focused on buil
 
 The initiative explores how causal AI, systems thinking, and open technical standards can help modernize credit scoring and underwriting for high-stakes financial applications.
 
-Website: https://lamchr.github.io/opencreditscoring.org/
+Website: https://opencreditscoring.org/
 
 ---
 
