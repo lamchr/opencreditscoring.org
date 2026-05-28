@@ -4,37 +4,33 @@ import HeroImage from "@/public/images/cylinder-and-shadows.png";
 export const metadata = {
   title: "Open Credit Scoring",
   description:
-    "Transparent credit scoring infrastructure for lenders, researchers, and public-interest builders.",
+    "An open research and standards initiative for trustworthy AI-driven credit decisions.",
 };
 
-const principles = [
-  {
-    title: "Open by design",
-    text: "Model cards, feature definitions, validation notes, and policy limits are documented so teams can understand why a score moves.",
-  },
-  {
-    title: "Auditable decisions",
-    text: "Every score can be traced to source data, transformation logic, and the versioned model used at decision time.",
-  },
-  {
-    title: "Fair lending ready",
-    text: "Bias monitoring, adverse-action reason mapping, and drift checks are treated as first-class operating requirements.",
-  },
+const decisionQuestions = [
+  "Why was a decision made?",
+  "Which data actually caused the result?",
+  "Is the model relying on a proxy for a protected attribute?",
+  "Would the decision change under a fair counterfactual?",
+  "How will the system affect consumers and markets over time?",
 ];
 
-const modules = [
-  "Data contribution standards",
-  "Explainable scorecards",
-  "Model validation workspace",
-  "Reason-code library",
-  "Portfolio monitoring",
-  "Compliance exports",
+const approachAreas = [
+  "Causal AI for credit underwriting",
+  "Fair lending and antidiscrimination analysis",
+  "Alternative data evaluation",
+  "Explainable and governable AI systems",
+  "Systems thinking for financial AI",
+  "Open standards for high-stakes decision systems",
 ];
 
-const metrics = [
-  ["8.4M", "synthetic and contributed records mapped to open schemas"],
-  ["31", "policy and model checks before a score is released"],
-  ["14 days", "typical cycle from validation package to pilot launch"],
+const audience = [
+  "Researchers",
+  "Financial institutions",
+  "Standards experts",
+  "Policymakers",
+  "Consumer advocates",
+  "Technology builders",
 ];
 
 export default function Home() {
@@ -49,8 +45,8 @@ export default function Home() {
               Open Credit Scoring
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-surface/82">
-              An AI research and standards initiative to develop the
-              mathematical foundations for trustworthy credit decisions.
+              An open research and standards initiative for trustworthy
+              AI-driven credit decisions.
             </p>
           </div>
 
@@ -68,28 +64,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="model" className="bg-surface py-16 md:py-20">
+      <section className="bg-surface py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">
-              A scoring system people can inspect before they trust it.
+              Credit scoring needs a new foundation.
             </h2>
-          </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {principles.map((item) => (
-              <article
-                className="rounded-md border border-line bg-white/80 p-6 shadow-sm shadow-midnight/[0.03]"
-                key={item.title}
-                data-aos="fade-up"
-              >
-                <h3 className="text-lg font-bold text-midnight">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-body">
-                  {item.text}
-                </p>
-              </article>
-            ))}
+            <div className="mt-5 space-y-5 leading-7 text-body">
+              <p>
+                Credit scores shape access to mortgages, auto loans, credit
+                cards, housing, and economic opportunity.
+              </p>
+              <p>
+                Yet today’s credit scoring systems are often proprietary,
+                difficult to inspect, and hard to govern. New AI underwriting
+                systems may improve prediction, but they can also make
+                transparency, fairness, and accountability harder.
+              </p>
+              <p>
+                Open Credit Scoring explores a different path: using causal AI,
+                systems thinking, and open standards to build financial decision
+                systems that can be understood, evaluated, and trusted.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -98,23 +95,32 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <div>
             <h2 className="text-3xl font-bold text-midnight md:text-4xl">
-              Built for lenders, researchers, and civic technology teams.
+              Beyond black-box prediction
             </h2>
-            <p className="mt-5 leading-7 text-body">
-              Open Credit Scoring gives teams a common language for credit data,
-              model validation, and borrower-facing explanations. Use it to
-              benchmark internal models, launch transparent pilots, or publish
-              reproducible research.
-            </p>
+            <div className="mt-5 space-y-5 leading-7 text-body">
+              <p>
+                Most credit scoring systems are built around statistical
+                prediction.
+              </p>
+              <p>
+                But high-stakes financial decisions require more than accurate
+                predictions. They require systems that can answer deeper
+                questions.
+              </p>
+              <p>
+                Open Credit Scoring investigates how causal models can help
+                answer these questions.
+              </p>
+            </div>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {modules.map((module) => (
+          <div className="grid gap-3">
+            {decisionQuestions.map((question) => (
               <div
-                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03] transition hover:border-teal-accent/50"
-                key={module}
+                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
+                key={question}
                 data-aos="fade-up"
               >
-                {module}
+                {question}
               </div>
             ))}
           </div>
@@ -122,39 +128,90 @@ export default function Home() {
       </section>
 
       <section className="bg-surface py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-4 md:grid-cols-3">
-            {metrics.map(([value, label]) => (
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
+              Our approach
+            </h2>
+            <div className="mt-5 space-y-5 leading-7 text-body">
+              <p>We are developing a research agenda around:</p>
+              <p>
+                The goal is not simply to create another credit score.
+              </p>
+              <p>
+                The goal is to help establish an open technical foundation for
+                trustworthy financial AI.
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {approachAreas.map((area) => (
               <div
-                className="rounded-md border border-line border-l-4 border-l-gold bg-white/80 p-6 shadow-sm shadow-midnight/[0.03]"
-                key={value}
+                className="rounded-md border border-line bg-white/85 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03] transition hover:border-teal-accent/50"
+                key={area}
                 data-aos="fade-up"
               >
-                <p className="text-4xl font-bold text-midnight">{value}</p>
-                <p className="mt-3 text-sm leading-6 text-body">{label}</p>
+                {area}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section
-        id="pilot"
-        className="bg-[linear-gradient(135deg,#0B1F33_0%,#0D2A3D_58%,#0B1F33_100%)] py-16 text-white md:py-20"
-      >
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
-          <div>
-            <h2 className="max-w-3xl text-3xl font-bold md:text-4xl">
-              Bring transparent credit scoring into your next underwriting
-              pilot.
+      <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
+              Why now?
             </h2>
+            <div className="mt-5 space-y-5 leading-7 text-body">
+              <p>
+                AI is rapidly entering credit underwriting, lending, insurance,
+                housing, and other high-stakes financial systems.
+              </p>
+              <p>
+                At the same time, institutions face growing pressure to improve
+                transparency, reduce bias, manage regulatory risk, and maintain
+                public trust.
+              </p>
+              <p className="border-l-4 border-gold bg-white/80 py-3 pl-5 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]">
+                Financial AI should be accurate, transparent, governable, and
+                safe by design.
+              </p>
+            </div>
           </div>
-          <a
-            className="btn bg-teal-accent text-midnight shadow-none hover:bg-teal-accent/90"
-            href="mailto:hello@opencreditscoring.org"
-          >
-            Contact the team
-          </a>
+        </div>
+      </section>
+
+      <section className="bg-[linear-gradient(135deg,#0B1F33_0%,#0D2A3D_58%,#0B1F33_100%)] py-16 text-white md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Build the future of trustworthy financial AI
+            </h2>
+            <div className="mt-5 space-y-5 leading-7 text-surface/82">
+              <p>
+                Open Credit Scoring is for researchers, financial institutions,
+                standards experts, policymakers, consumer advocates, and
+                technology builders working to modernize credit decision
+                systems.
+              </p>
+              <p>
+                We are building an open ecosystem for the next generation of
+                credit scoring and financial AI.
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {audience.map((item) => (
+              <div
+                className="rounded-md border border-white/10 bg-white/[0.06] p-4 font-semibold text-surface shadow-sm shadow-midnight/[0.03]"
+                key={item}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
