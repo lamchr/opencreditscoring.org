@@ -22,30 +22,37 @@ const systemGoals = [
 
 export default function OpenCreditScoringPage() {
   return (
-    <section className="bg-surface pb-16 pt-36 md:pb-20 md:pt-40">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <article className="max-w-3xl">
-          <h1 className="text-5xl font-bold leading-[1.02] text-midnight md:text-6xl">
-            What is Open Credit Scoring?
-          </h1>
-
-          <div className="mt-8 space-y-5 text-lg leading-8 text-body">
-            <p>
-              Credit scores shape access to modern economic life. They
-              influence whether people can obtain mortgages, auto loans, credit
-              cards, insurance, apartments, and sometimes even employment
-              opportunities.
-            </p>
-            <p>
-              Yet most credit scoring systems remain proprietary black boxes.
-              Consumers, lenders, regulators, and even many institutions often
-              cannot fully understand how these systems operate, how decisions
-              are made, or how bias and errors propagate through the system.
-            </p>
+    <>
+      <section className="relative isolate overflow-hidden bg-midnight pt-28 text-white md:pt-36">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(20,184,166,.22),transparent_46%),linear-gradient(180deg,rgba(248,250,252,.10),transparent_40%)]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-teal-accent/40 to-transparent" />
+        <div className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 md:pb-20">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl font-bold leading-[1.02] md:text-6xl">
+              What is Open Credit Scoring?
+            </h1>
+            <div className="mt-8 max-w-3xl space-y-5 text-lg leading-8 text-surface/82">
+              <p>
+                Credit scores shape access to modern economic life. They
+                influence whether people can obtain mortgages, auto loans,
+                credit cards, insurance, apartments, and sometimes even
+                employment opportunities.
+              </p>
+              <p>
+                Yet most credit scoring systems remain proprietary black boxes.
+                Consumers, lenders, regulators, and even many institutions often
+                cannot fully understand how these systems operate, how decisions
+                are made, or how bias and errors propagate through the system.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-bold text-midnight">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
               The Problem with Proprietary Credit Scoring
             </h2>
             <div className="mt-5 space-y-5 leading-7 text-body">
@@ -53,16 +60,8 @@ export default function OpenCreditScoringPage() {
                 Traditional credit scoring systems were designed for a
                 different era of finance. While they helped standardize lending
                 decisions at scale, they also introduced several structural
-                problems:
+                problems.
               </p>
-              <ul className="space-y-3">
-                {structuralProblems.map((problem) => (
-                  <li className="flex gap-3" key={problem}>
-                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-accent" />
-                    <span>{problem}</span>
-                  </li>
-                ))}
-              </ul>
               <p>
                 Modern AI and machine learning systems have made these
                 challenges even more complex. Many newer underwriting systems
@@ -75,10 +74,24 @@ export default function OpenCreditScoringPage() {
                 accountability, and public confidence.
               </p>
             </div>
-          </section>
+          </div>
+          <div className="grid gap-3">
+            {structuralProblems.map((problem) => (
+              <div
+                className="rounded-md border border-line bg-white/80 p-4 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
+                key={problem}
+              >
+                {problem}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-bold text-midnight">
+      <section className="border-y border-line bg-[linear-gradient(180deg,#F8FAFC_0%,#EEF6F6_100%)] py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
               Why Existing Solutions Are Not Enough
             </h2>
             <div className="mt-5 space-y-5 leading-7 text-body">
@@ -112,10 +125,14 @@ export default function OpenCreditScoringPage() {
                 essential for long-term adoption.
               </p>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-bold text-midnight">
+      <section className="bg-surface py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[.95fr_1.05fr] lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold text-midnight md:text-4xl">
               What Open Credit Scoring Is About
             </h2>
             <div className="mt-5 space-y-5 leading-7 text-body">
@@ -127,18 +144,8 @@ export default function OpenCreditScoringPage() {
               <p>
                 The initiative explores how causal AI, open standards, and
                 transparent governance can help create next-generation financial
-                decision systems that are:
+                decision systems.
               </p>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {systemGoals.map((goal) => (
-                  <div
-                    className="rounded-md border border-line bg-white/80 px-4 py-3 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
-                    key={goal}
-                  >
-                    {goal}
-                  </div>
-                ))}
-              </div>
               <p>
                 Rather than treating fairness and compliance as external audits
                 applied after deployment, Open Credit Scoring explores how they
@@ -155,11 +162,25 @@ export default function OpenCreditScoringPage() {
                 helped build the modern internet.
               </p>
             </div>
-          </section>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {systemGoals.map((goal) => (
+              <div
+                className="rounded-md border border-line bg-white/80 p-5 font-semibold text-midnight shadow-sm shadow-midnight/[0.03]"
+                key={goal}
+              >
+                {goal}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <section className="mt-12 rounded-md border border-line bg-[linear-gradient(135deg,#FFFFFF_0%,#EEF6F6_100%)] p-6 shadow-sm shadow-midnight/[0.03]">
-            <h2 className="text-3xl font-bold text-midnight">Our Vision</h2>
-            <div className="mt-5 space-y-5 leading-7 text-body">
+      <section className="bg-[linear-gradient(135deg,#0B1F33_0%,#0D2A3D_58%,#0B1F33_100%)] py-16 text-white md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold md:text-4xl">Our Vision</h2>
+            <div className="mt-5 space-y-5 leading-7 text-surface/82">
               <p>
                 We believe the future of financial AI requires more than larger
                 models and more data.
@@ -174,9 +195,9 @@ export default function OpenCreditScoringPage() {
                 and safe by design.
               </p>
             </div>
-          </section>
-        </article>
-      </div>
-    </section>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
