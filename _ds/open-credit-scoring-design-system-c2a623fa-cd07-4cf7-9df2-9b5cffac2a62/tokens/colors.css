@@ -1,0 +1,83 @@
+/* ─────────────────────────────────────────────────────────────
+   Open Credit Scoring — Color tokens
+   A warm-paper / cool-ink institutional palette. Borders do the
+   structural work; color is used sparingly and with intent.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* ── Paper (white base, cool-neutral panels, light → dark) ─── */
+  --paper-0:  #FFFFFF;   /* page background — white                */
+  --paper-1:  #F5F6F7;   /* recessed panels, alternating rows     */
+  --paper-2:  #ECEEF0;   /* sunken wells, hover on paper          */
+  --paper-3:  #E0E3E6;   /* strong fill on paper                  */
+  --card:     #FFFFFF;   /* card surface (separated by border)    */
+
+  /* ── Ink (cool near-black neutrals, dark → light) ──────────── */
+  --ink-900:  #15181E;   /* primary text, headlines               */
+  --ink-800:  #23272F;   /* dark surfaces                         */
+  --ink-700:  #3B414B;   /* secondary text                        */
+  --ink-500:  #6A717C;   /* muted text, captions                  */
+  --ink-400:  #8A919C;   /* faint text, placeholders              */
+  --ink-300:  #B6BBC3;   /* disabled, dividers on dark            */
+
+  /* ── Hairlines & borders ───────────────────────────────────── */
+  --line-faint:   rgba(21, 24, 30, 0.08);
+  --line:         rgba(21, 24, 30, 0.14);
+  --line-strong:  rgba(21, 24, 30, 0.28);
+  --line-on-dark: rgba(255, 255, 255, 0.16);
+
+  /* ── Blue (institutional navy — primary) ───────────────────── */
+  --blue-900: #0B2238;
+  --blue-800: #102E50;
+  --blue-700: #173E69;   /* brand primary — institutional navy    */
+  --blue-600: #1F4F86;
+  --blue-500: #1F5FD0;   /* interactive / links                   */
+  --blue-300: #88ABEC;
+  --blue-100: #DAE6FA;   /* tint background                       */
+  --blue-050: #EDF3FD;
+
+  /* ── Red (institutional cardinal — secondary, complements navy) */
+  --red-700: #79202B;
+  --red-600: #A52A39;   /* secondary accent, plotted series      */
+  --red-300: #D78F98;
+  --red-100: #F4DADE;
+
+  /* ── Data series (institutional categorical set for charts) ── */
+  --series-a:  #173E69;  /* navy        */
+  --series-b:  #A52A39;  /* cardinal    */
+  --series-c:  #2F77C2;  /* bright blue */
+  --series-d:  #6E7A8A;  /* slate       */
+
+  /* ── Status (functional, desaturated to fit the palette) ───── */
+  --ok-600:    #2F6B4E;
+  --ok-100:    #DBEEE2;
+  --warn-600:  #9A6A14;
+  --warn-100:  #F3E7C9;
+  --danger-600:#A53726;
+  --danger-100:#F4DDD7;
+
+  /* ── Semantic aliases ──────────────────────────────────────── */
+  --surface-page:    var(--paper-0);
+  --surface-panel:   var(--paper-1);
+  --surface-sunken:  var(--paper-2);
+  --surface-card:    var(--card);
+  --surface-ink:     var(--ink-900);
+  --surface-ink-soft:var(--ink-800);
+
+  --text-primary:    var(--ink-900);
+  --text-secondary:  var(--ink-700);
+  --text-muted:      var(--ink-500);
+  --text-faint:      var(--ink-400);
+  --text-on-dark:    var(--paper-0);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.62);
+
+  --brand-primary:   var(--blue-700);
+  --brand-primary-ink: var(--blue-900);
+  --accent-link:     var(--blue-500);
+  --accent-secondary:var(--red-600);
+
+  --border-hairline: var(--line);
+  --border-faint:    var(--line-faint);
+  --border-strong:   var(--line-strong);
+
+  --focus-ring:      var(--blue-500);
+}

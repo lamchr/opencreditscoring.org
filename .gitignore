@@ -1,0 +1,15 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Logs / deps (in case a build is added later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Workspace scratch
+screenshots/
+*.tmp

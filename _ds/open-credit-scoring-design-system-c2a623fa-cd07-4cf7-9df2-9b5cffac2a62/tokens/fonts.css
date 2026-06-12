@@ -1,0 +1,10 @@
+/* ─────────────────────────────────────────────────────────────
+   Open Credit Scoring — Webfonts
+   Loaded from the Google Fonts CDN. To self-host, replace the
+   @import below with local @font-face rules pointing at /fonts/*.woff2
+   ─────────────────────────────────────────────────────────────
+   Spectral       — display serif (scholarly authority)
+   IBM Plex Sans  — body / UI sans (neutral, technical)
+   IBM Plex Mono  — labels, data, code (the brand's mono signature)
+*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');

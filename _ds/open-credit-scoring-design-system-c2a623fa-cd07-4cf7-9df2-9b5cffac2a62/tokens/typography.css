@@ -1,0 +1,50 @@
+/* ─────────────────────────────────────────────────────────────
+   Open Credit Scoring — Typography tokens
+   Spectral (serif display) · IBM Plex Sans (body/UI) · IBM Plex Mono (data)
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* ── Families ──────────────────────────────────────────────── */
+  --font-serif: 'Spectral', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-sans:  'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', 'Menlo', monospace;
+
+  /* ── Weights ──────────────────────────────────── @kind font ─ */
+  --w-light:    300;  /* @kind font */
+  --w-regular:  400;  /* @kind font */
+  --w-medium:   500;  /* @kind font */
+  --w-semibold: 600;  /* @kind font */
+  --w-bold:     700;  /* @kind font */
+
+  /* ── Type scale (px) — a measured editorial scale ──────────── */
+  --fs-display: 72px;   /* hero serif                  */
+  --fs-h1:      52px;
+  --fs-h2:      38px;
+  --fs-h3:      28px;
+  --fs-h4:      22px;
+  --fs-lead:    21px;   /* standfirst / lead paragraph */
+  --fs-body:    17px;
+  --fs-sm:      15px;
+  --fs-xs:      13px;
+  --fs-label:   12px;   /* mono eyebrows / metadata    */
+
+  /* ── Line heights ─────────────────────────────── @kind font ─ */
+  --lh-tight:   1.04;  /* @kind font */
+  --lh-snug:    1.18;  /* @kind font */
+  --lh-display: 1.06;  /* @kind font */
+  --lh-heading: 1.14;  /* @kind font */
+  --lh-body:    1.6;   /* @kind font */
+  --lh-relaxed: 1.72;  /* @kind font */
+
+  /* ── Letter spacing ───────────────────────────── @kind font ─ */
+  --ls-tightest: -0.03em;  /* @kind font */
+  --ls-tight:   -0.015em;  /* @kind font */
+  --ls-normal:   0;        /* @kind font */
+  --ls-wide:     0.04em;   /* @kind font */
+  --ls-label:    0.12em;   /* @kind font */
+
+  /* ── Semantic roles ────────────────────────────────────────── */
+  --text-display-font: var(--font-serif);
+  --text-heading-font: var(--font-serif);
+  --text-body-font:    var(--font-sans);
+  --text-mono-font:    var(--font-mono);
+}

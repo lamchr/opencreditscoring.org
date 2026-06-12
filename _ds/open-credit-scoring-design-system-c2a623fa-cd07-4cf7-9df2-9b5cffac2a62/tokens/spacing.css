@@ -1,0 +1,61 @@
+/* ─────────────────────────────────────────────────────────────
+   Open Credit Scoring — Spacing, radii, borders, shadows, motion
+   4px base grid. Institutional restraint: small radii, hairline
+   borders, near-flat surfaces.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* ── Spacing scale (4px base) ──────────────────────────────── */
+  --space-0:   0;
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ── Layout ────────────────────────────────────────────────── */
+  --measure:        68ch;     /* @kind spacing */ /* optimal reading width */
+  --content-max:    1200px;   /* @kind spacing */
+  --gutter:         var(--space-8);  /* @kind spacing */
+
+  /* ── Radii (small — precise, institutional) ────────────────── */
+  --r-none: 0;      /* @kind radius */
+  --r-xs:   2px;
+  --r-sm:   4px;
+  --r-md:   6px;
+  --r-lg:   10px;
+  --r-pill: 999px;
+
+  /* ── Border widths ─────────────────────────────────────────── */
+  --bw-hair: 1px;
+  --bw-med:  1.5px;
+  --bw-rule: 2px;
+
+  /* ── Shadows (subtle; borders carry most structure) ────────── */
+  --shadow-0: none;
+  --shadow-1: 0 1px 2px rgba(21, 24, 30, 0.06);
+  --shadow-2: 0 2px 8px rgba(21, 24, 30, 0.07), 0 1px 2px rgba(21, 24, 30, 0.05);
+  --shadow-3: 0 8px 28px rgba(21, 24, 30, 0.10), 0 2px 6px rgba(21, 24, 30, 0.06);
+  --shadow-inset: inset 0 1px 2px rgba(21, 24, 30, 0.06);
+
+  /* ── Motion ────────────────────────────────────────────────── */
+  --ease-out:   cubic-bezier(0.22, 0.61, 0.36, 1);   /* @kind other */
+  --ease-inout: cubic-bezier(0.45, 0, 0.2, 1);        /* @kind other */
+  --dur-fast:   120ms;  /* @kind other */
+  --dur-base:   200ms;  /* @kind other */
+  --dur-slow:   360ms;  /* @kind other */
+
+  /* ── Z-index ───────────────────────────────────────────────── */
+  --z-base:   1;     /* @kind other */
+  --z-sticky: 100;   /* @kind other */
+  --z-overlay:500;   /* @kind other */
+  --z-modal:  1000;  /* @kind other */
+  --z-toast:  1500;  /* @kind other */
+}
