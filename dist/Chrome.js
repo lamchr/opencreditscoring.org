@@ -97,7 +97,7 @@ function SiteFooter() {
       maxWidth: '34ch',
       lineHeight: 1.6
     }
-  }, "Increasing Innovation, Competition, and Trust in Credit Decisions"))), /*#__PURE__*/React.createElement("div", {
+  }, "Establishing the Mathematical Foundations for Trustworthy Credit Decisions"))), /*#__PURE__*/React.createElement("div", {
     className: "wrap colophon"
   }, /*#__PURE__*/React.createElement("span", null, "\xA9 2026 Open Decisions Consortium")));
 }

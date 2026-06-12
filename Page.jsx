@@ -128,13 +128,26 @@ function Page({ onNav }) {
   { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the science of trustworthy decision-making', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.' },
   { icon: 'landmark', h: 'Government', tag: 'Support innovation while maintaining effective oversight', p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.' }];
 
-  const team = [
+  // ── Real team & advisors — PRESERVED for recovery. ───────────────────────────
+  // Temporarily hidden behind the placeholders below. To restore: delete the two
+  // placeholder arrays and rename these back to `team` / `advisors`. Photos are
+  // untouched in assets/.
+  const teamSaved = [
   { i: 'CL', nm: 'Chris Lam', img: 'assets/chris-lam.jpg', role: 'Founder and CEO\nEpistamai' },
   { i: 'MA', nm: 'Dr. Michael Akinwumi', img: 'assets/michael-akinwumi.jpg', role: 'Chief Responsible AI Officer\nNational Fair Housing Alliance' },
   { i: 'EO', nm: 'Dr. Emmanuel Ogundimu', img: 'assets/emmanuel-ogundimu.jpg', role: 'Associate Professor\nDurham University' }];
 
-  const advisors = [
+  const advisorsSaved = [
   { i: 'JD', nm: 'Dr. Jason Dietrich', img: 'assets/jason-dietrich.jpg', role: 'Former Chief, Compliance Analytics\nConsumer Financial Protection Bureau' }];
+
+  // ── Temporary placeholders shown in the About section. ──────────────────────
+  const team = [
+  { i: '', nm: 'Member name', role: 'Title · Affiliation' },
+  { i: '', nm: 'Member name', role: 'Title · Affiliation' },
+  { i: '', nm: 'Member name', role: 'Title · Affiliation' }];
+
+  const advisors = [
+  { i: '', nm: 'Advisor name', role: 'Title · Affiliation' }];
 
 
   const anchor = { scrollMarginTop: 80 };
@@ -315,7 +328,7 @@ function Page({ onNav }) {
         <div className="sec-block">
           <h3 className="sub-label" style={{ fontSize: "28px" }}>Founding Team</h3>
           <div className="people">
-            {team.map((p) => <div className="person" key={p.nm}>
+            {team.map((p, idx) => <div className="person" key={idx}>
                 <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
                 <div>
                   <div className="nm">{p.nm}</div>
@@ -325,7 +338,7 @@ function Page({ onNav }) {
           </div>
           <h3 className="sub-label" style={{ marginTop: 'var(--space-12)', fontSize: "28px" }}>Advisors</h3>
           <div className="people">
-            {advisors.map((p) => <div className="person" key={p.nm}>
+            {advisors.map((p, idx) => <div className="person" key={idx}>
                 <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
                 <div>
                   <div className="nm">{p.nm}</div>

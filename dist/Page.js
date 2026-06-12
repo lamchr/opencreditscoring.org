@@ -298,7 +298,12 @@ function Page({
     tag: 'Support innovation while maintaining effective oversight',
     p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.'
   }];
-  const team = [{
+
+  // ── Real team & advisors — PRESERVED for recovery. ───────────────────────────
+  // Temporarily hidden behind the placeholders below. To restore: delete the two
+  // placeholder arrays and rename these back to `team` / `advisors`. Photos are
+  // untouched in assets/.
+  const teamSaved = [{
     i: 'CL',
     nm: 'Chris Lam',
     img: 'assets/chris-lam.jpg',
@@ -314,11 +319,31 @@ function Page({
     img: 'assets/emmanuel-ogundimu.jpg',
     role: 'Associate Professor\nDurham University'
   }];
-  const advisors = [{
+  const advisorsSaved = [{
     i: 'JD',
     nm: 'Dr. Jason Dietrich',
     img: 'assets/jason-dietrich.jpg',
     role: 'Former Chief, Compliance Analytics\nConsumer Financial Protection Bureau'
+  }];
+
+  // ── Temporary placeholders shown in the About section. ──────────────────────
+  const team = [{
+    i: '',
+    nm: 'Member name',
+    role: 'Title · Affiliation'
+  }, {
+    i: '',
+    nm: 'Member name',
+    role: 'Title · Affiliation'
+  }, {
+    i: '',
+    nm: 'Member name',
+    role: 'Title · Affiliation'
+  }];
+  const advisors = [{
+    i: '',
+    nm: 'Advisor name',
+    role: 'Title · Affiliation'
   }];
   const anchor = {
     scrollMarginTop: 80
@@ -663,9 +688,9 @@ function Page({
     }
   }, "Founding Team"), /*#__PURE__*/React.createElement("div", {
     className: "people"
-  }, team.map(p => /*#__PURE__*/React.createElement("div", {
+  }, team.map((p, idx) => /*#__PURE__*/React.createElement("div", {
     className: "person",
-    key: p.nm
+    key: idx
   }, /*#__PURE__*/React.createElement("div", {
     className: "avatar"
   }, p.img ? /*#__PURE__*/React.createElement("img", {
@@ -683,9 +708,9 @@ function Page({
     }
   }, "Advisors"), /*#__PURE__*/React.createElement("div", {
     className: "people"
-  }, advisors.map(p => /*#__PURE__*/React.createElement("div", {
+  }, advisors.map((p, idx) => /*#__PURE__*/React.createElement("div", {
     className: "person",
-    key: p.nm
+    key: idx
   }, /*#__PURE__*/React.createElement("div", {
     className: "avatar"
   }, p.img ? /*#__PURE__*/React.createElement("img", {

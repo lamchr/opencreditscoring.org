@@ -13,3 +13,6 @@ yarn-error.log*
 # Workspace scratch
 screenshots/
 *.tmp
+
+# Dev-only live preview (transpiles .jsx in-browser; not part of the build)
+preview.html
