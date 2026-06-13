@@ -244,7 +244,7 @@ function Page({ onNav }) {
       <section id="standards" className="wrap section" style={anchor}>
         <div className="section-head">
           <div>
-            <h2>Standards</h2>
+            <h2>Standards Development</h2>
           </div>
         </div>
         <div className="std-single">
@@ -390,35 +390,36 @@ Whether you want to collaborate on research, contribute to a standard, or partic
                   <textarea id="f-message" name="message" className="ocs-input" rows={4} placeholder="How can we help?" required style={{ resize: 'vertical', fontFamily: 'var(--font-sans)', lineHeight: 1.55 }} />
                 </div>
                 <div>
-                  <Button variant="primary" type="submit">Send message</Button>
+                  <Button variant="primary" type="submit">Send Message</Button>
                 </div>
               </form>
                 }
             </div>
           </div>
         </div>
-        </div>
-      </section>
-
-      {/* ── Newsletter CTA ───────────────────────────────────── */}
-      <section className="news-cta">
-        <div className="wrap news-cta-inner">
-          <div className="news-cta-copy">
-            <h2 style={{ fontSize: "28px" }}>Newsletter Sign Up</h2>
-            <p>Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.</p>
+        <div className="sec-block" style={{ marginTop: 'var(--space-12)', borderTop: '1px solid var(--line)', paddingTop: 'var(--space-12)' }}>
+          <div className="gov-grid">
+            <div>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Newsletter Sign Up</h3>
+              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.</p>
+            </div>
+            <div>
+              {subscribed ? <Callout variant="note" title="subscribed">
+                Thanks for subscribing — you’ll hear from us when there’s something worth reading.
+              </Callout> : <form name="newsletter" onSubmit={(e) => {
+                  e.preventDefault();
+                  submitEmailForm(e.currentTarget, 'newsletter');
+                  setSubscribed(true);
+                }} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
+                <TextField label="Work email" name="email" type="email" placeholder="you@institution.org" required />
+                <div>
+                  <Button variant="primary" type="submit">Subscribe</Button>
+                </div>
+              </form>
+                }
+            </div>
           </div>
-          {subscribed ?
-          <p className="nc-confirm">Thanks for subscribing — you’ll hear from us when there’s something worth reading.</p> :
-
-          <form className="nc-form" name="newsletter" onSubmit={(e) => {
-            e.preventDefault();
-            submitEmailForm(e.currentTarget, 'newsletter');
-            setSubscribed(true);
-          }}>
-            <TextField label="Work email" name="email" type="email" placeholder="you@institution.org" required />
-            <Button variant="accent" type="submit">Subscribe</Button>
-          </form>
-          }
+        </div>
         </div>
       </section>
 

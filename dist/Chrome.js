@@ -19,9 +19,6 @@ function SiteHeader({
   }, {
     id: 'about',
     label: 'About'
-  }, {
-    id: 'contact',
-    label: 'Get Involved'
   }];
   return /*#__PURE__*/React.createElement("header", {
     className: "site-header"
@@ -35,7 +32,7 @@ function SiteHeader({
       onNav('home');
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "assets/ocs-loop-navy.svg",
+    src: "assets/ocs-loop-white.svg",
     width: "34",
     height: "34",
     alt: "OCS"
@@ -43,7 +40,9 @@ function SiteHeader({
     className: "wm"
   }, /*#__PURE__*/React.createElement("span", {
     className: "nm"
-  }, "Open Credit Scoring"))), /*#__PURE__*/React.createElement("nav", {
+  }, "Open Credit Scoring"))), /*#__PURE__*/React.createElement("div", {
+    className: "spacer"
+  }), /*#__PURE__*/React.createElement("nav", {
     className: "site-nav"
   }, nav.map(n => /*#__PURE__*/React.createElement("a", {
     key: n.label,
@@ -53,9 +52,19 @@ function SiteHeader({
       e.preventDefault();
       onNav(n.id);
     }
-  }, n.label))), /*#__PURE__*/React.createElement("div", {
-    className: "spacer"
-  })));
+  }, n.label)), /*#__PURE__*/React.createElement(Button, {
+    variant: "accent",
+    href: "#contact",
+    onClick: e => {
+      e.preventDefault();
+      onNav('contact');
+    },
+    style: {
+      marginLeft: 'var(--space-3)',
+      color: 'var(--paper-0)',
+      padding: '10px 18px'
+    }
+  }, "Get Involved"))));
 }
 function SiteFooter() {
   return /*#__PURE__*/React.createElement("footer", {
@@ -69,7 +78,7 @@ function SiteFooter() {
       marginBottom: 16
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "assets/ocs-loop-navy.svg",
+    src: "assets/ocs-loop-white.svg",
     width: "34",
     height: "34",
     alt: "OCS"
@@ -79,7 +88,7 @@ function SiteFooter() {
     className: "nm"
   }, "Open Credit Scoring"))), /*#__PURE__*/React.createElement("p", {
     style: {
-      color: 'var(--ink-700)',
+      color: 'rgba(255, 255, 255, 0.75)',
       fontSize: 14,
       maxWidth: '34ch',
       lineHeight: 1.6

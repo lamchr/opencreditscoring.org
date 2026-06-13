@@ -517,7 +517,7 @@ function Page({
     style: anchor
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Standards"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Standards Development"))), /*#__PURE__*/React.createElement("div", {
     className: "std-single"
   }, /*#__PURE__*/React.createElement("div", {
     className: "std-single-body"
@@ -852,25 +852,47 @@ function Page({
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
     variant: "primary",
     type: "submit"
-  }, "Send message")))))))), /*#__PURE__*/React.createElement("section", {
-    className: "news-cta"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "wrap news-cta-inner"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "news-cta-copy"
-  }, /*#__PURE__*/React.createElement("h2", {
+  }, "Send Message")))))), /*#__PURE__*/React.createElement("div", {
+    className: "sec-block",
     style: {
-      fontSize: "28px"
+      marginTop: 'var(--space-12)',
+      borderTop: '1px solid var(--line)',
+      paddingTop: 'var(--space-12)'
     }
-  }, "Newsletter Sign Up"), /*#__PURE__*/React.createElement("p", null, "Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.")), subscribed ? /*#__PURE__*/React.createElement("p", {
-    className: "nc-confirm"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "gov-grid"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: 'var(--font-serif)',
+      fontWeight: 400,
+      fontSize: 28,
+      letterSpacing: '-0.01em',
+      lineHeight: 1.12,
+      color: 'var(--ink-900)',
+      margin: 0
+    }
+  }, "Newsletter Sign Up"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 17,
+      lineHeight: 1.65,
+      color: 'var(--ink-700)',
+      marginTop: 16,
+      maxWidth: '42ch'
+    }
+  }, "Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.")), /*#__PURE__*/React.createElement("div", null, subscribed ? /*#__PURE__*/React.createElement(Callout, {
+    variant: "note",
+    title: "subscribed"
   }, "Thanks for subscribing \u2014 you\u2019ll hear from us when there\u2019s something worth reading.") : /*#__PURE__*/React.createElement("form", {
-    className: "nc-form",
     name: "newsletter",
     onSubmit: e => {
       e.preventDefault();
       submitEmailForm(e.currentTarget, 'newsletter');
       setSubscribed(true);
+    },
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--space-5)'
     }
   }, /*#__PURE__*/React.createElement(TextField, {
     label: "Work email",
@@ -878,10 +900,10 @@ function Page({
     type: "email",
     placeholder: "you@institution.org",
     required: true
-  }), /*#__PURE__*/React.createElement(Button, {
-    variant: "accent",
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
+    variant: "primary",
     type: "submit"
-  }, "Subscribe")))));
+  }, "Subscribe")))))))));
 }
 Object.assign(window, {
   Page
