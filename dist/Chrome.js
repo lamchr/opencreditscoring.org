@@ -21,7 +21,7 @@ function SiteHeader({
     label: 'About'
   }, {
     id: 'contact',
-    label: 'Contact'
+    label: 'Get Involved'
   }];
   return /*#__PURE__*/React.createElement("header", {
     className: "site-header"
@@ -55,20 +55,7 @@ function SiteHeader({
     }
   }, n.label))), /*#__PURE__*/React.createElement("div", {
     className: "spacer"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "actions"
-  }, /*#__PURE__*/React.createElement("a", {
-    className: "icon-btn",
-    "aria-label": "Contact",
-    href: "#contact",
-    onClick: e => {
-      e.preventDefault();
-      onNav('contact');
-    }
-  }, /*#__PURE__*/React.createElement(LucideIcon, {
-    name: "mail",
-    size: 17
-  })))));
+  })));
 }
 function SiteFooter() {
   return /*#__PURE__*/React.createElement("footer", {

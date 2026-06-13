@@ -7,7 +7,7 @@ function SiteHeader({ current, onNav }) {
   { id: 'standards', label: 'Standards' },
   { id: 'governance', label: 'Governance' },
   { id: 'about', label: 'About' },
-  { id: 'contact', label: 'Contact' }];
+  { id: 'contact', label: 'Get Involved' }];
 
   return (
     <header className="site-header">
@@ -24,9 +24,6 @@ function SiteHeader({ current, onNav }) {
           )}
         </nav>
         <div className="spacer" />
-        <div className="actions">
-          <a className="icon-btn" aria-label="Contact" href="#contact" onClick={(e) => {e.preventDefault();onNav('contact');}}><LucideIcon name="mail" size={17} /></a>
-        </div>
       </div>
     </header>);
 

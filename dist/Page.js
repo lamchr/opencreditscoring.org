@@ -749,7 +749,7 @@ function Page({
     className: "wrap section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Contact"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Get Involved"))), /*#__PURE__*/React.createElement("div", {
     className: "sec-block"
   }, /*#__PURE__*/React.createElement("div", {
     className: "gov-grid"
@@ -763,7 +763,7 @@ function Page({
       color: 'var(--ink-900)',
       margin: 0
     }
-  }, "Collaborate With Us"), /*#__PURE__*/React.createElement("p", {
+  }, "Contact Us"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 17,
       lineHeight: 1.65,
