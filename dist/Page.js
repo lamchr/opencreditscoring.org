@@ -403,7 +403,7 @@ function Page({
     className: "wrap section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Research Agenda"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Research"))), /*#__PURE__*/React.createElement("div", {
     className: "projects"
   }, projects.map((p, i) => /*#__PURE__*/React.createElement("div", {
     className: "project",
@@ -517,7 +517,7 @@ function Page({
     style: anchor
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Standards Development"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Standards"))), /*#__PURE__*/React.createElement("div", {
     className: "std-single"
   }, /*#__PURE__*/React.createElement("div", {
     className: "std-single-body"

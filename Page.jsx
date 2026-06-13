@@ -182,7 +182,7 @@ function Page({ onNav }) {
         <div className="wrap section">
         <div className="section-head">
           <div>
-            <h2>Research Agenda</h2>
+            <h2>Research</h2>
           </div>
         </div>
         <div className="projects">
@@ -244,7 +244,7 @@ function Page({ onNav }) {
       <section id="standards" className="wrap section" style={anchor}>
         <div className="section-head">
           <div>
-            <h2>Standards Development</h2>
+            <h2>Standards</h2>
           </div>
         </div>
         <div className="std-single">
