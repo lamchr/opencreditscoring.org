@@ -283,7 +283,7 @@ function Page({
     tag: 'Build More Accurate and Trustworthy Credit Decisions',
     p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.'
   }, {
-    icon: 'handshake',
+    icon: 'hand-fist',
     h: 'Nonprofits',
     tag: 'Promote Fair and Trustworthy Credit Access',
     p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.'
@@ -662,7 +662,7 @@ function Page({
   }, /*#__PURE__*/React.createElement("span", {
     className: "ic"
   }, /*#__PURE__*/React.createElement(LucideIcon, {
-    name: "handshake",
+    name: "hand-fist",
     size: 38
   })), /*#__PURE__*/React.createElement("span", {
     className: "lbl"

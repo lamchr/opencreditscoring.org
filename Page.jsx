@@ -124,7 +124,7 @@ function Page({ onNav }) {
 
   const stakeholders = [
   { icon: 'building-2', h: 'Industry', tag: 'Build More Accurate and Trustworthy Credit Decisions', p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.' },
-  { icon: 'handshake', h: 'Nonprofits', tag: 'Promote Fair and Trustworthy Credit Access', p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.' },
+  { icon: 'hand-fist', h: 'Nonprofits', tag: 'Promote Fair and Trustworthy Credit Access', p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.' },
   { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the Science of Trustworthy Decision-Making', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.' },
   { icon: 'landmark', h: 'Government', tag: 'Support Trustworthy Innovation through Effective Oversight', p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.' }];
 
@@ -296,7 +296,7 @@ credit decision is fair, valid, and legally compliant?</p>
                   </svg>
                   <div className="conv-center"><img src="assets/ocs-loop-navy.svg" width="50" height="50" alt="OCS" /></div>
                   <div className="conv-node n-tl"><span className="ic"><LucideIcon name="building-2" size={38} /></span><span className="lbl">Industry</span></div>
-                  <div className="conv-node n-tr"><span className="ic"><LucideIcon name="handshake" size={38} /></span><span className="lbl">Nonprofits</span></div>
+                  <div className="conv-node n-tr"><span className="ic"><LucideIcon name="hand-fist" size={38} /></span><span className="lbl">Nonprofits</span></div>
                   <div className="conv-node n-bl"><span className="ic"><LucideIcon name="graduation-cap" size={38} /></span><span className="lbl">Academia</span></div>
                   <div className="conv-node n-br"><span className="ic"><LucideIcon name="landmark" size={38} /></span><span className="lbl">Government</span></div>
                 </div>
