@@ -35,7 +35,7 @@ function SiteHeader({
       onNav('home');
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "assets/ocs-mark-color.svg",
+    src: "assets/ocs-loop-navy.svg",
     width: "34",
     height: "34",
     alt: "OCS"
@@ -82,7 +82,7 @@ function SiteFooter() {
       marginBottom: 16
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "assets/ocs-mark-color.svg",
+    src: "assets/ocs-loop-navy.svg",
     width: "34",
     height: "34",
     alt: "OCS"

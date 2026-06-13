@@ -13,7 +13,7 @@ function SiteHeader({ current, onNav }) {
     <header className="site-header">
       <div className="wrap header-inner">
         <a className="site-logo" href="#top" onClick={(e) => {e.preventDefault();onNav('home');}}>
-          <img src="assets/ocs-mark-color.svg" width="34" height="34" alt="OCS" />
+          <img src="assets/ocs-loop-navy.svg" width="34" height="34" alt="OCS" />
           <span className="wm">
             <span className="nm">Open Credit Scoring</span>
           </span>
@@ -39,7 +39,7 @@ function SiteFooter() {
       <div className="wrap cols">
         <div>
           <a className="site-logo" href="#top" style={{ marginBottom: 16 }}>
-            <img src="assets/ocs-mark-color.svg" width="34" height="34" alt="OCS" />
+            <img src="assets/ocs-loop-navy.svg" width="34" height="34" alt="OCS" />
             <span className="wm">
               <span className="nm">Open Credit Scoring</span>
             </span>

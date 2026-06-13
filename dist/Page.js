@@ -245,21 +245,21 @@ function Page({
   }];
   const projects = [{
     n: 'Research Project 1',
-    title: 'Using Alternative Data Without \nProxy Discrimination',
+    title: 'Proxy Discrimination in Alternative Data',
     cbn: adCbn,
-    q: 'How can lenders use alternative data to expand access to credit without causing proxy discrimination or digital redlining?',
-    p: 'Develop methods to debias alternative data using new data science techniques that integrate causal inference into supervised machine learning.',
+    q: 'When does alternative data improve credit access, and when does it act as a proxy for protected characteristics?',
+    p: 'Develop causal methods to distinguish legitimate predictors of creditworthiness from discriminatory proxies.',
     cap: '<strong>Digital Redlining.</strong> Modeling proxy discrimination using a causal Bayesian network. Demographics (Z) has a <strong style="color:var(--red-600)">spurious effect</strong> on creditworthiness (W) through the protected attribute (A), which acts as a confounding variable.'
   }, {
     n: 'Research Project 2',
     cbn: diCbn,
-    title: 'Reducing Disparate Impact Through Causal Analysis',
-    q: 'How can causal models identify the sources of disparate impact and guide the design of less discriminatory credit decisions?',
-    p: 'Develop methods to model biases in the data generating process by using causal inference and system dynamics to identify interventions into a machine learning model.',
+    title: 'Sources of Disparate Impact',
+    q: 'What causes disparate impact in AI credit decisions, and how can those causes be addressed?',
+    p: 'Develop causal and system-dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
     cap: '<strong>Disparate Impact.</strong> Modeling unintentional discrimination using a causal Bayesian network. The protected attribute (A) has an <strong style="color:var(--red-600)">indirect negative effect</strong> on the credit decision (D) through the inclusion of invalid applicant data (X).'
   }, {
     n: 'Research Project 3',
-    title: 'End-to-End AI Credit Underwriting',
+    title: 'Trustworthy AI Credit Underwriting',
     flow: [{
       k: 'Agentic AI',
       r: 'Automation'
@@ -273,29 +273,29 @@ function Page({
     }],
     inLabel: 'Applicant Data',
     outLabel: 'Credit Decision',
-    q: 'How can lenders responsibly integrate generative AI and agentic AI to automate the credit underwriting process?',
-    p: 'Develop methods to address ethical AI challenges in machine learning using systems thinking to automate additional stages of the credit underwriting process.',
+    q: 'How can lenders responsibly automate credit underwriting using generative and agentic AI?',
+    p: 'Develop methods that combine causal, generative, and agentic AI while preserving accuracy, explainability, and trust.',
     cap: '<strong>Underwriting Pipeline.</strong> A reference architecture for AI-enabled underwriting where agentic AI automates workflows, generative AI interprets applicant information, and <strong>causal AI is responsible for the final credit decision</strong>.'
   }];
   const stakeholders = [{
     icon: 'building-2',
     h: 'Industry',
-    tag: 'Build more accurate, fair, and trusted credit decisions',
+    tag: 'Build More Accurate and Trustworthy Credit Decisions',
     p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.'
   }, {
     icon: 'handshake',
     h: 'Nonprofits',
-    tag: 'Ensure consumer protection through proactive system design',
+    tag: 'Promote Fair and Trustworthy Credit Access',
     p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.'
   }, {
     icon: 'graduation-cap',
     h: 'Academia',
-    tag: 'Advance the science of trustworthy decision-making',
+    tag: 'Advance the Science of Trustworthy Decision-Making',
     p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.'
   }, {
     icon: 'landmark',
     h: 'Government',
-    tag: 'Support innovation while maintaining effective oversight',
+    tag: 'Support Trustworthy Innovation through Effective Oversight',
     p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.'
   }];
 
@@ -339,8 +339,24 @@ function Page({
     i: '',
     nm: 'Member name',
     role: 'Title · Affiliation'
+  }, {
+    i: '',
+    nm: 'Member name',
+    role: 'Title · Affiliation'
   }];
   const advisors = [{
+    i: '',
+    nm: 'Advisor name',
+    role: 'Title · Affiliation'
+  }, {
+    i: '',
+    nm: 'Advisor name',
+    role: 'Title · Affiliation'
+  }, {
+    i: '',
+    nm: 'Advisor name',
+    role: 'Title · Affiliation'
+  }, {
     i: '',
     nm: 'Advisor name',
     role: 'Title · Affiliation'
@@ -352,9 +368,14 @@ function Page({
     id: "top",
     className: "wrap hero",
     style: anchor
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Open Infrastructure for Next Generation Credit Innovation"), /*#__PURE__*/React.createElement("p", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      fontWeight: "300",
+      maxWidth: "550px"
+    }
+  }, "Establishing the Scientific Foundations for Trustworthy Credit Decisions"), /*#__PURE__*/React.createElement("p", {
     className: "lead"
-  }, "Open Credit Scoring develops the research, standards, and governance needed to make AI credit decisioning more innovative, competitive, and trustworthy.")), /*#__PURE__*/React.createElement("figure", {
+  }, "As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace. Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -380,7 +401,7 @@ function Page({
     className: "wrap section"
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Research"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Research Agenda"))), /*#__PURE__*/React.createElement("div", {
     className: "projects"
   }, projects.map((p, i) => /*#__PURE__*/React.createElement("div", {
     className: "project",
@@ -516,12 +537,12 @@ function Page({
     style: {
       fontSize: "19px"
     }
-  }, "How can organizations design credit models that are in compliance with antidiscrimination law?"), /*#__PURE__*/React.createElement("p", {
+  }, "How can organizations determine whether an AI credit decision is fair, valid, and legally compliant?"), /*#__PURE__*/React.createElement("p", {
     className: "std-d",
     style: {
       fontSize: "15px"
     }
-  }, "IEEE P3591 provides a framework for translating concepts between anti-discrimination law, causal inference, and machine learning to improve communication and to reduce regulatory uncertainty.")), /*#__PURE__*/React.createElement("figure", {
+  }, "IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure std-fig"
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",
@@ -558,14 +579,14 @@ function Page({
       fontSize: "28px",
       fontWeight: "400"
     }
-  }, "Building Trust Through Open Collaboration"), /*#__PURE__*/React.createElement("p", {
+  }, "Advancing Trust Through Open Collaboration"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 18,
       lineHeight: 1.65,
       color: 'var(--ink-700)',
       marginTop: 20
     }
-  }, "Open Credit Scoring brings together industry, nonprofits, academia, and government to advance innovation, competition, and trust in credit decision-making. Our model is built on three pillars: open research, open standards, and open governance. By creating an open forum for collaboration, we seek to accelerate the development of trustworthy underwriting technologies, lower barriers to entry for new market participants, and establish the scientific foundations needed for responsible AI-enabled credit decisions.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions. Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure conv-fig"
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",
@@ -614,7 +635,7 @@ function Page({
   })), /*#__PURE__*/React.createElement("div", {
     className: "conv-center"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "assets/ocs-mark-color.svg",
+    src: "assets/ocs-loop-navy.svg",
     width: "50",
     height: "50",
     alt: "OCS"
@@ -750,7 +771,7 @@ function Page({
       marginTop: 16,
       maxWidth: '42ch'
     }
-  }, "We welcome inquiries from researchers, lenders, regulators, and nonprofits working on trustworthy credit decisions \u2014 whether you want to collaborate on research, adopt a standard, or join the conversation.")), /*#__PURE__*/React.createElement("div", null, sent ? /*#__PURE__*/React.createElement(Callout, {
+  }, "We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions. Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.")), /*#__PURE__*/React.createElement("div", null, sent ? /*#__PURE__*/React.createElement(Callout, {
     variant: "note",
     title: "message received"
   }, "Thank you \u2014 we\u2019ve received your note and will be in touch.") : /*#__PURE__*/React.createElement("form", {
@@ -785,16 +806,16 @@ function Page({
       label: 'Research collaboration'
     }, {
       value: 'standards',
-      label: 'Standards participation'
+      label: 'Standards development'
+    }, {
+      value: 'governance',
+      label: 'Governance participation'
     }, {
       value: 'regulatory',
       label: 'Regulatory engagement'
     }, {
       value: 'industry',
       label: 'Industry partnership'
-    }, {
-      value: 'speaking',
-      label: 'Speaking invitation'
     }, {
       value: 'media',
       label: 'Media inquiry'

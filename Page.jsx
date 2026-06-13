@@ -25,15 +25,15 @@ function submitEmailForm(form, kind) {
   }
 
   const lines = [
-    'New inquiry from opencreditscoring.org',
-    '',
-    `Name: ${formData.get('name') || ''}`,
-    `Email: ${formData.get('email') || ''}`,
-    `Topic: ${formData.get('topic') || ''}`,
-    '',
-    'Message:',
-    formData.get('message') || ''
-  ];
+  'New inquiry from opencreditscoring.org',
+  '',
+  `Name: ${formData.get('name') || ''}`,
+  `Email: ${formData.get('email') || ''}`,
+  `Topic: ${formData.get('topic') || ''}`,
+  '',
+  'Message:',
+  formData.get('message') || ''];
+
 
   window.location.href = `mailto:${email}?subject=${encodeURIComponent('Open Credit Scoring inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
 }
@@ -103,30 +103,30 @@ function Page({ onNav }) {
   { id: 'Y', letter: 'Y', label: ['Credit', 'Default'], variant: 'accent' }];
 
   const projects = [
-  { n: 'Research Project 1', title: 'Using Alternative Data Without \nProxy Discrimination',
+  { n: 'Research Project 1', title: 'Proxy Discrimination in Alternative Data',
     cbn: adCbn,
-    q: 'How can lenders use alternative data to expand access to credit without causing proxy discrimination or digital redlining?',
-    p: 'Develop methods to debias alternative data using new data science techniques that integrate causal inference into supervised machine learning.',
+    q: 'When does alternative data improve credit access, and when does it act as a proxy for protected characteristics?',
+    p: 'Develop causal methods to distinguish legitimate predictors of creditworthiness from discriminatory proxies.',
     cap: '<strong>Digital Redlining.</strong> Modeling proxy discrimination using a causal Bayesian network. Demographics (Z) has a <strong style="color:var(--red-600)">spurious effect</strong> on creditworthiness (W) through the protected attribute (A), which acts as a confounding variable.' },
-  { n: 'Research Project 2', cbn: diCbn, title: 'Reducing Disparate Impact Through Causal Analysis',
-    q: 'How can causal models identify the sources of disparate impact and guide the design of less discriminatory credit decisions?',
-    p: 'Develop methods to model biases in the data generating process by using causal inference and system dynamics to identify interventions into a machine learning model.',
+  { n: 'Research Project 2', cbn: diCbn, title: 'Sources of Disparate Impact',
+    q: 'What causes disparate impact in AI credit decisions, and how can those causes be addressed?',
+    p: 'Develop causal and system-dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
     cap: '<strong>Disparate Impact.</strong> Modeling unintentional discrimination using a causal Bayesian network. The protected attribute (A) has an <strong style="color:var(--red-600)">indirect negative effect</strong> on the credit decision (D) through the inclusion of invalid applicant data (X).' },
-  { n: 'Research Project 3', title: 'End-to-End AI Credit Underwriting',
+  { n: 'Research Project 3', title: 'Trustworthy AI Credit Underwriting',
     flow: [
     { k: 'Agentic AI', r: 'Automation' },
     { k: 'Generative AI', r: 'Reasoning' },
     { k: 'Causal AI', r: 'Decisioning', accent: true }],
     inLabel: 'Applicant Data', outLabel: 'Credit Decision',
-    q: 'How can lenders responsibly integrate generative AI and agentic AI to automate the credit underwriting process?',
-    p: 'Develop methods to address ethical AI challenges in machine learning using systems thinking to automate additional stages of the credit underwriting process.',
+    q: 'How can lenders responsibly automate credit underwriting using generative and agentic AI?',
+    p: 'Develop methods that combine causal, generative, and agentic AI while preserving accuracy, explainability, and trust.',
     cap: '<strong>Underwriting Pipeline.</strong> A reference architecture for AI-enabled underwriting where agentic AI automates workflows, generative AI interprets applicant information, and <strong>causal AI is responsible for the final credit decision</strong>.' }];
 
   const stakeholders = [
-  { icon: 'building-2', h: 'Industry', tag: 'Build more accurate, fair, and trusted credit decisions', p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.' },
-  { icon: 'handshake', h: 'Nonprofits', tag: 'Ensure consumer protection through proactive system design', p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.' },
-  { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the science of trustworthy decision-making', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.' },
-  { icon: 'landmark', h: 'Government', tag: 'Support innovation while maintaining effective oversight', p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.' }];
+  { icon: 'building-2', h: 'Industry', tag: 'Build More Accurate and Trustworthy Credit Decisions', p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.' },
+  { icon: 'handshake', h: 'Nonprofits', tag: 'Promote Fair and Trustworthy Credit Access', p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.' },
+  { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the Science of Trustworthy Decision-Making', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.' },
+  { icon: 'landmark', h: 'Government', tag: 'Support Trustworthy Innovation through Effective Oversight', p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.' }];
 
   // ── Real team & advisors — PRESERVED for recovery. ───────────────────────────
   // Temporarily hidden behind the placeholders below. To restore: delete the two
@@ -144,9 +144,13 @@ function Page({ onNav }) {
   const team = [
   { i: '', nm: 'Member name', role: 'Title · Affiliation' },
   { i: '', nm: 'Member name', role: 'Title · Affiliation' },
+  { i: '', nm: 'Member name', role: 'Title · Affiliation' },
   { i: '', nm: 'Member name', role: 'Title · Affiliation' }];
 
   const advisors = [
+  { i: '', nm: 'Advisor name', role: 'Title · Affiliation' },
+  { i: '', nm: 'Advisor name', role: 'Title · Affiliation' },
+  { i: '', nm: 'Advisor name', role: 'Title · Affiliation' },
   { i: '', nm: 'Advisor name', role: 'Title · Affiliation' }];
 
 
@@ -157,10 +161,11 @@ function Page({ onNav }) {
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section id="top" className="wrap hero" style={anchor}>
         <div>
-          <h1>Open Infrastructure for Next Generation Credit Innovation</h1>
-          <p className="lead">Open Credit Scoring develops the research, standards, and governance needed to make AI credit decisioning more innovative, competitive, and trustworthy.
+          <h1 style={{ fontWeight: "300", maxWidth: "550px" }}>Establishing the Scientific Foundations for Trustworthy Credit Decisions</h1>
+          <p className="lead">As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace.
 
-
+Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy
+AI credit decisioning systems.
           </p>
         </div>
         <figure className="figure" style={{ margin: 0 }}>
@@ -180,61 +185,60 @@ function Page({ onNav }) {
         <div className="wrap section">
         <div className="section-head">
           <div>
-            <h2>Research</h2>
+            <h2>Research Agenda</h2>
           </div>
         </div>
         <div className="projects">
-          {projects.map((p, i) =>
-          <div className="project" key={p.title}>
+          {projects.map((p, i) => <div className="project" key={p.title}>
               <div className="pj-text">
                 <h3>{p.title}</h3>
                 <p className="pj-q">{p.q}</p>
                 <p className="pj-p">{p.p}</p>
               </div>
               {p.cbn &&
-            <figure className="figure pj-fig">
+              <figure className="figure pj-fig">
                 <div className="plot" style={{ height: 200 }}><CausalBayesNet {...p.cbn} /></div>
                 <figcaption>
                   <span className="fc-label">fig. {i + 1}</span>
                   <span className="fc-text">{renderCap(p.cap)}</span>
                 </figcaption>
               </figure>
-            }
+              }
               {p.flow &&
-            <figure className="figure pj-fig">
+              <figure className="figure pj-fig">
                 <div className="plot" style={{ height: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center', padding: '22px 30px' }}>
                   {[{ term: p.inLabel }, ...p.flow, { term: p.outLabel }].map((it, si, arr) =>
-                <React.Fragment key={it.term || it.k}>
+                  <React.Fragment key={it.term || it.k}>
                         {it.term ?
-                  <div style={{ textAlign: 'center', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 14.5, color: 'var(--ink-600)' }}>{it.term}</div> :
+                    <div style={{ textAlign: 'center', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 14.5, color: 'var(--ink-600)' }}>{it.term}</div> :
 
-                  <div style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12,
-                    padding: '11px 15px', border: '1px solid var(--line)', borderRadius: 6,
-                    borderLeft: it.accent ? '3px solid var(--blue-700)' : '3px solid var(--ink-900)',
-                    background: 'var(--paper-0)' }}>
+                    <div style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12,
+                      padding: '11px 15px', border: '1px solid var(--line)', borderRadius: 6,
+                      borderLeft: it.accent ? '3px solid var(--blue-700)' : '3px solid var(--ink-900)',
+                      background: 'var(--paper-0)' }}>
                           <span style={{ fontFamily: 'var(--font-serif)', fontSize: 17, lineHeight: 1.1, fontWeight: it.accent ? 600 : 400, whiteSpace: 'nowrap', color: 'var(--ink-900)' }}>{it.k}</span>
                           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', whiteSpace: 'nowrap', fontWeight: it.accent ? 700 : 400, color: it.accent ? 'var(--blue-700)' : 'var(--ink-500)' }}>{it.r}</span>
                         </div>
-                  }
+                    }
                         {si < arr.length - 1 &&
-                  <div style={{ display: 'flex', justifyContent: 'center', padding: '5px 0' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', padding: '5px 0' }}>
                           <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true" style={{ position: 'static', inset: 'auto', width: 10, height: 16, flex: 'none' }}>
                             <path d="M5 0 V14 M1 10 L5 14 L9 10" stroke="var(--ink-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         </div>
-                  }
+                    }
                       </React.Fragment>
-                )}
+                  )}
                 </div>
                 <figcaption>
                   <span className="fc-label">fig. {i + 1}</span>
                   <span className="fc-text">{renderCap(p.cap)}</span>
                 </figcaption>
               </figure>
-            }
+              }
             </div>
-          )}
+            )}
         </div>
         </div>
       </section>
@@ -253,9 +257,9 @@ function Page({ onNav }) {
               <Tag variant="warn" dot>in development</Tag>
             </div>
             <h3 style={{ fontSize: "28px" }}>Fair Decision Making Through Causal Analysis</h3>
-            <p className="std-q" style={{ fontSize: "19px" }}>How can organizations design credit models that are in compliance with antidiscrimination law?
-            </p>
-            <p className="std-d" style={{ fontSize: "15px" }}>IEEE P3591 provides a framework for translating concepts between anti-discrimination law, causal inference, and machine learning to improve communication and to reduce regulatory uncertainty.</p>
+            <p className="std-q" style={{ fontSize: "19px" }}>How can organizations determine whether an AI
+credit decision is fair, valid, and legally compliant?</p>
+            <p className="std-d" style={{ fontSize: "15px" }}>IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.</p>
           </div>
           <figure className="figure std-fig">
             <div className="plot" style={{ height: 200 }}><CausalBayesNet nodes={sfNodes} /></div>
@@ -280,8 +284,10 @@ function Page({ onNav }) {
         <div className="sec-block">
           <div className="gov-grid">
             <div>
-              <h2 style={{ letterSpacing: '-0.03em', lineHeight: 1.06, maxWidth: '1000px', margin: 0, fontSize: "28px", fontWeight: "400" }}>Building Trust Through Open Collaboration</h2>
-              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 20 }}>Open Credit Scoring brings together industry, nonprofits, academia, and government to advance innovation, competition, and trust in credit decision-making. Our model is built on three pillars: open research, open standards, and open governance. By creating an open forum for collaboration, we seek to accelerate the development of trustworthy underwriting technologies, lower barriers to entry for new market participants, and establish the scientific foundations needed for responsible AI-enabled credit decisions.</p>
+              <h2 style={{ letterSpacing: '-0.03em', lineHeight: 1.06, maxWidth: '1000px', margin: 0, fontSize: "28px", fontWeight: "400" }}>Advancing Trust Through Open Collaboration</h2>
+              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 20 }}>Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions. Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.
+
+                </p>
             </div>
             <figure className="figure conv-fig">
               <div className="plot" style={{ height: 300 }}>
@@ -292,7 +298,7 @@ function Page({ onNav }) {
                     <line x1="50" y1="50" x2="29" y2="68" stroke="var(--line-strong)" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                     <line x1="50" y1="50" x2="71" y2="68" stroke="var(--line-strong)" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                   </svg>
-                  <div className="conv-center"><img src="assets/ocs-mark-color.svg" width="50" height="50" alt="OCS" /></div>
+                  <div className="conv-center"><img src="assets/ocs-loop-navy.svg" width="50" height="50" alt="OCS" /></div>
                   <div className="conv-node n-tl"><span className="ic"><LucideIcon name="building-2" size={38} /></span><span className="lbl">Industry</span></div>
                   <div className="conv-node n-tr"><span className="ic"><LucideIcon name="handshake" size={38} /></span><span className="lbl">Nonprofits</span></div>
                   <div className="conv-node n-bl"><span className="ic"><LucideIcon name="graduation-cap" size={38} /></span><span className="lbl">Academia</span></div>
@@ -344,8 +350,7 @@ function Page({ onNav }) {
                   <div className="nm">{p.nm}</div>
                   <div className="role">{p.role}</div>
                 </div>
-              </div>
-            )}
+              </div>)}
           </div>
         </div>
       </section>
@@ -362,29 +367,28 @@ function Page({ onNav }) {
           <div className="gov-grid">
             <div>
               <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Collaborate With Us</h3>
-              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>We welcome inquiries from researchers, lenders, regulators, and nonprofits working on trustworthy credit decisions — whether you want to collaborate on research, adopt a standard, or join the conversation.</p>
+              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions.
+
+Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.</p>
             </div>
             <div>
-              {sent ?
-              <Callout variant="note" title="message received">
+              {sent ? <Callout variant="note" title="message received">
                 Thank you — we’ve received your note and will be in touch.
-              </Callout> :
-
-              <form name="contact" onSubmit={(e) => {
-                e.preventDefault();
-                submitEmailForm(e.currentTarget, 'contact');
-                setSent(true);
-              }} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
+              </Callout> : <form name="contact" onSubmit={(e) => {
+                  e.preventDefault();
+                  submitEmailForm(e.currentTarget, 'contact');
+                  setSent(true);
+                }} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
                 <TextField label="Name" name="name" placeholder="Jane Researcher" required />
                 <TextField label="Work email" name="email" type="email" placeholder="you@institution.org" required />
                 <Select label="I’m reaching out about" name="topic" defaultValue="research" options={[
-                { value: 'research', label: 'Research collaboration' },
-                { value: 'standards', label: 'Standards participation' },
-                { value: 'regulatory', label: 'Regulatory engagement' },
-                { value: 'industry', label: 'Industry partnership' },
-                { value: 'speaking', label: 'Speaking invitation' },
-                { value: 'media', label: 'Media inquiry' },
-                { value: 'general', label: 'General inquiry' }]} />
+                  { value: 'research', label: 'Research collaboration' },
+                  { value: 'standards', label: 'Standards development' },
+                  { value: 'governance', label: 'Governance participation' },
+                  { value: 'regulatory', label: 'Regulatory engagement' },
+                  { value: 'industry', label: 'Industry partnership' },
+                  { value: 'media', label: 'Media inquiry' },
+                  { value: 'general', label: 'General inquiry' }]} />
                 <div className="ocs-field">
                   <label className="ocs-field__label" htmlFor="f-message">Message</label>
                   <textarea id="f-message" name="message" className="ocs-input" rows={4} placeholder="How can we help?" required style={{ resize: 'vertical', fontFamily: 'var(--font-sans)', lineHeight: 1.55 }} />
@@ -393,7 +397,7 @@ function Page({ onNav }) {
                   <Button variant="primary" type="submit">Send message</Button>
                 </div>
               </form>
-              }
+                }
             </div>
           </div>
         </div>

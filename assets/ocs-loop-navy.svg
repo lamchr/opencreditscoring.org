@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 106 106" width="512" height="512" fill="none">
+  <path d="M 81.177 68.000 A 36 36 0 0 1 14.547 56.251" stroke="#173E69" stroke-width="9" stroke-linecap="round"></path>
+  <path d="M 18.823 32.000 A 36 36 0 0 1 85.453 43.749" stroke="#173E69" stroke-width="9" stroke-linecap="round"></path>
+  <polygon points="12.437,44.286 26.876,61.388 4.718,65.295" fill="#173E69"></polygon>
+  <polygon points="87.563,55.714 73.124,38.612 95.282,34.705" fill="#173E69"></polygon>
+</svg>
