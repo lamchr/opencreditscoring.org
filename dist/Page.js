@@ -375,7 +375,9 @@ function Page({
     }
   }, "Establishing the Scientific Foundations for Trustworthy Credit Decisions"), /*#__PURE__*/React.createElement("p", {
     className: "lead"
-  }, "As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace. Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.")), /*#__PURE__*/React.createElement("figure", {
+  }, "As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace."), /*#__PURE__*/React.createElement("p", {
+    className: "lead"
+  }, "Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -586,7 +588,14 @@ function Page({
       color: 'var(--ink-700)',
       marginTop: 20
     }
-  }, "Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions. Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 18,
+      lineHeight: 1.65,
+      color: 'var(--ink-700)',
+      marginTop: 16
+    }
+  }, "Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure conv-fig"
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",
@@ -763,7 +772,7 @@ function Page({
       color: 'var(--ink-900)',
       margin: 0
     }
-  }, "Contact Us"), /*#__PURE__*/React.createElement("p", {
+  }, "Collaborate With Us"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 17,
       lineHeight: 1.65,

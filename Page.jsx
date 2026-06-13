@@ -162,11 +162,8 @@ function Page({ onNav }) {
       <section id="top" className="wrap hero" style={anchor}>
         <div>
           <h1 style={{ fontWeight: "300", maxWidth: "550px" }}>Establishing the Scientific Foundations for Trustworthy Credit Decisions</h1>
-          <p className="lead">As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace.
-
-Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy
-AI credit decisioning systems.
-          </p>
+          <p className="lead">As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace.</p>
+          <p className="lead">Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.</p>
         </div>
         <figure className="figure" style={{ margin: 0 }}>
           <div className="video-ph">
@@ -285,9 +282,8 @@ credit decision is fair, valid, and legally compliant?</p>
           <div className="gov-grid">
             <div>
               <h2 style={{ letterSpacing: '-0.03em', lineHeight: 1.06, maxWidth: '1000px', margin: 0, fontSize: "28px", fontWeight: "400" }}>Advancing Trust Through Open Collaboration</h2>
-              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 20 }}>Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions. Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.
-
-                </p>
+              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 20 }}>Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions.</p>
+              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16 }}>Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.</p>
             </div>
             <figure className="figure conv-fig">
               <div className="plot" style={{ height: 300 }}>
@@ -366,7 +362,7 @@ credit decision is fair, valid, and legally compliant?</p>
         <div className="sec-block">
           <div className="gov-grid">
             <div>
-              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Contact Us</h3>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Collaborate With Us</h3>
               <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions.
 
 Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.</p>
