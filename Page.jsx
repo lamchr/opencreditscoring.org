@@ -110,7 +110,7 @@ function Page({ onNav }) {
     cap: '<strong>Digital Redlining.</strong> Modeling proxy discrimination using a causal Bayesian network. Demographics (Z) has a <strong style="color:var(--red-600)">spurious effect</strong> on creditworthiness (W) through the protected attribute (A), which acts as a confounding variable.' },
   { n: 'Research Project 2', cbn: diCbn, title: 'Sources of Disparate Impact',
     q: 'What causes disparate impact in AI credit decisions, and how can those causes be addressed?',
-    p: 'Develop causal and system-dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
+    p: 'Develop causal and system dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
     cap: '<strong>Disparate Impact.</strong> Modeling unintentional discrimination using a causal Bayesian network. The protected attribute (A) has an <strong style="color:var(--red-600)">indirect negative effect</strong> on the credit decision (D) through the inclusion of invalid applicant data (X).' },
   { n: 'Research Project 3', title: 'Trustworthy AI Credit Underwriting',
     flow: [
@@ -123,10 +123,10 @@ function Page({ onNav }) {
     cap: '<strong>Underwriting Pipeline.</strong> A reference architecture for AI-enabled underwriting where agentic AI automates workflows, generative AI interprets applicant information, and <strong>causal AI is responsible for the final credit decision</strong>.' }];
 
   const stakeholders = [
-  { icon: 'building-2', h: 'Industry', tag: 'Build More Accurate and Trustworthy Credit Decisions', p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.' },
-  { icon: 'hand-fist', h: 'Nonprofits', tag: 'Promote Fair and Trustworthy Credit Access', p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.' },
-  { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the Science of Trustworthy Decision-Making', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.' },
-  { icon: 'landmark', h: 'Government', tag: 'Support Trustworthy Innovation through Effective Oversight', p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.' }];
+  { icon: 'building-2', h: 'Industry', tag: 'Translate Research into Real-World Innovation', p: 'Lenders, fintechs, data providers, and technology companies contribute practical expertise, real-world challenges, and implementation experience that help translate research into practical credit solutions.' },
+  { icon: 'hand-fist', h: 'Nonprofits', tag: 'Represent Consumer and Community Interests', p: 'Civil-rights organizations, consumer advocates, and community groups help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and trustworthy access to credit.' },
+  { icon: 'graduation-cap', h: 'Academia', tag: 'Advance the Science of Credit Scoring', p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and law that help establish the scientific foundations of trustworthy credit decisions.' },
+  { icon: 'landmark', h: 'Government', tag: 'Promote Safety, Soundness, and Consumer Protection', p: 'Regulators engage with emerging research, technical standards, and industry practices to help promote safety, soundness, consumer protection, and confidence in AI-enabled decision systems.' }];
 
   // ── Real team & advisors — PRESERVED for recovery. ───────────────────────────
   // Temporarily hidden behind the placeholders below. To restore: delete the two
@@ -161,9 +161,8 @@ function Page({ onNav }) {
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section id="top" className="wrap hero" style={anchor}>
         <div>
-          <h1 style={{ fontWeight: "300", maxWidth: "550px" }}>Establishing the Scientific Foundations for Trustworthy Credit Decisions</h1>
-          <p className="lead">As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace.</p>
-          <p className="lead">Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.</p>
+          <h1 style={{ fontWeight: "300", maxWidth: "550px" }}>Advancing the Science of Credit Scoring</h1>
+          <p className="lead">Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions and support a more open and competitive credit scoring ecosystem.</p>
         </div>
         <figure className="figure" style={{ margin: 0 }}>
           <div className="video-ph">
@@ -281,9 +280,9 @@ credit decision is fair, valid, and legally compliant?</p>
         <div className="sec-block">
           <div className="gov-grid">
             <div>
-              <h2 style={{ letterSpacing: '-0.03em', lineHeight: 1.06, maxWidth: '1000px', margin: 0, fontSize: "28px", fontWeight: "400" }}>Advancing Trust Through Open Collaboration</h2>
+              <h2 style={{ letterSpacing: '-0.03em', lineHeight: 1.06, maxWidth: '1000px', margin: 0, fontSize: "28px", fontWeight: "400" }}>Advancing Science and Trust Through Open Collaboration</h2>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 20 }}>Open Credit Scoring brings together industry, nonprofits, academia, and government to advance the research, standards, and governance needed for trustworthy AI credit decisions.</p>
-              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16 }}>Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.</p>
+              <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16 }}>Our mission is twofold: to establish the scientific foundations of trustworthy credit scoring and to build the collaborative infrastructure needed to support innovation, competition, and trust across the credit ecosystem.</p>
             </div>
             <figure className="figure conv-fig">
               <div className="plot" style={{ height: 300 }}>
@@ -363,9 +362,8 @@ credit decision is fair, valid, and legally compliant?</p>
           <div className="gov-grid">
             <div>
               <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Collaborate With Us</h3>
-              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions.
-
-Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.</p>
+              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions.</p>
+              <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 12, maxWidth: '42ch' }}>Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.</p>
             </div>
             <div>
               {sent ? <Callout variant="note" title="message received">

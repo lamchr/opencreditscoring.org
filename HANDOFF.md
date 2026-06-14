@@ -1,15 +1,15 @@
-# Handoff: Open Credit Scoring website → Claude Code
+# Handoff: Open Credit Scoring website
 
-This document is for a developer (using Claude Code) continuing work on this project.
-It assumes no prior context from the design session.
+This document is for a developer (or coding agent, e.g. Codex / Claude Code) continuing
+work on this project. It assumes no prior context from the design session.
 
 ## What this is
 
 A **complete, working single-page static website** for Open Credit Scoring (OCS) — an
 institutional AI-research site with Research, Standards, Governance, About, and Contact
 sections. It is **not a throwaway mock**: it runs as-is in a browser and can be deployed to
-any static host. The task on the Claude Code side is to **extend** it (wire up the forms,
-optionally move to a build pipeline, deploy) — not to recreate it from scratch.
+any static host. The task here is to **extend** it (wire up the forms, optionally move to
+a build pipeline, deploy) — not to recreate it from scratch.
 
 Fidelity: **high**. Final colors, typography, spacing, and layout are all in place via the
 bound Open Credit Scoring Design System.

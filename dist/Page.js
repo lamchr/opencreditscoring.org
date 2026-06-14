@@ -255,7 +255,7 @@ function Page({
     cbn: diCbn,
     title: 'Sources of Disparate Impact',
     q: 'What causes disparate impact in AI credit decisions, and how can those causes be addressed?',
-    p: 'Develop causal and system-dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
+    p: 'Develop causal and system dynamics models to identify the sources of disparate impact and evaluate potential interventions.',
     cap: '<strong>Disparate Impact.</strong> Modeling unintentional discrimination using a causal Bayesian network. The protected attribute (A) has an <strong style="color:var(--red-600)">indirect negative effect</strong> on the credit decision (D) through the inclusion of invalid applicant data (X).'
   }, {
     n: 'Research Project 3',
@@ -280,23 +280,23 @@ function Page({
   const stakeholders = [{
     icon: 'building-2',
     h: 'Industry',
-    tag: 'Build More Accurate and Trustworthy Credit Decisions',
-    p: 'Lenders, fintechs, data providers, and technology providers collaborate on methods that improve risk assessment while reducing discrimination, increasing transparency, and strengthening public trust in credit markets.'
+    tag: 'Translate Research into Real-World Innovation',
+    p: 'Lenders, fintechs, data providers, and technology companies contribute practical expertise, real-world challenges, and implementation experience that help translate research into practical credit solutions.'
   }, {
     icon: 'hand-fist',
     h: 'Nonprofits',
-    tag: 'Promote Fair and Trustworthy Credit Access',
-    p: 'Civil-rights organizations and consumer advocates help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and competitive access to credit while protecting consumers from harm.'
+    tag: 'Represent Consumer and Community Interests',
+    p: 'Civil-rights organizations, consumer advocates, and community groups help identify risks, evaluate impacts on affected communities, and ensure that new approaches promote fair and trustworthy access to credit.'
   }, {
     icon: 'graduation-cap',
     h: 'Academia',
-    tag: 'Advance the Science of Trustworthy Decision-Making',
-    p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and the law while gaining access to real-world problems that can drive the next generation of trustworthy AI research.'
+    tag: 'Advance the Science of Credit Scoring',
+    p: 'Researchers contribute new methods in systems thinking, causal inference, machine learning, economics, and law that help establish the scientific foundations of trustworthy credit decisions.'
   }, {
     icon: 'landmark',
     h: 'Government',
-    tag: 'Support Trustworthy Innovation through Effective Oversight',
-    p: 'Regulators engage with emerging research, technical standards, and industry practices that can improve consumer protection, safety and soundness, and confidence in AI-enabled decision systems.'
+    tag: 'Promote Safety, Soundness, and Consumer Protection',
+    p: 'Regulators engage with emerging research, technical standards, and industry practices to help promote safety, soundness, consumer protection, and confidence in AI-enabled decision systems.'
   }];
 
   // ── Real team & advisors — PRESERVED for recovery. ───────────────────────────
@@ -373,11 +373,9 @@ function Page({
       fontWeight: "300",
       maxWidth: "550px"
     }
-  }, "Establishing the Scientific Foundations for Trustworthy Credit Decisions"), /*#__PURE__*/React.createElement("p", {
+  }, "Advancing the Science of Credit Scoring"), /*#__PURE__*/React.createElement("p", {
     className: "lead"
-  }, "As AI transforms credit underwriting, the science needed to evaluate and govern these systems has not kept pace."), /*#__PURE__*/React.createElement("p", {
-    className: "lead"
-  }, "Open Credit Scoring advances the research, standards, and governance needed to build more accurate, explainable, and trustworthy AI credit decisioning systems.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions\xA0and support a more open and competitive credit scoring ecosystem.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -581,7 +579,7 @@ function Page({
       fontSize: "28px",
       fontWeight: "400"
     }
-  }, "Advancing Trust Through Open Collaboration"), /*#__PURE__*/React.createElement("p", {
+  }, "Advancing Science and Trust Through Open Collaboration"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 18,
       lineHeight: 1.65,
@@ -595,7 +593,7 @@ function Page({
       color: 'var(--ink-700)',
       marginTop: 16
     }
-  }, "Through open collaboration, we seek to advance the scientific foundations required for trustworthy AI credit decisions.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Our mission is twofold: to establish the scientific foundations of trustworthy credit scoring and to build the collaborative infrastructure needed to support innovation, competition, and trust across the credit ecosystem.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure conv-fig"
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",
@@ -780,7 +778,15 @@ function Page({
       marginTop: 16,
       maxWidth: '42ch'
     }
-  }, "We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions. Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.")), /*#__PURE__*/React.createElement("div", null, sent ? /*#__PURE__*/React.createElement(Callout, {
+  }, "We welcome inquiries from researchers, lenders, regulators, nonprofits, and technology providers interested in advancing the science of trustworthy credit decisions."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 17,
+      lineHeight: 1.65,
+      color: 'var(--ink-700)',
+      marginTop: 12,
+      maxWidth: '42ch'
+    }
+  }, "Whether you want to collaborate on research, contribute to a standard, or participate in governance discussions, we'd like to hear from you.")), /*#__PURE__*/React.createElement("div", null, sent ? /*#__PURE__*/React.createElement(Callout, {
     variant: "note",
     title: "message received"
   }, "Thank you \u2014 we\u2019ve received your note and will be in touch.") : /*#__PURE__*/React.createElement("form", {
