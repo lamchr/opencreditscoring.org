@@ -142,7 +142,7 @@ function Page({ onNav }) {
 
   // ── Temporary placeholders shown in the About section. ──────────────────────
   const team = [
-  { i: '', nm: 'Member name', role: 'Title · Affiliation' },
+  { i: 'CL', nm: 'Chris Lam', img: 'assets/chris-lam.jpg', role: 'Founder and CEO\nEpistamai' },
   { i: '', nm: 'Member name', role: 'Title · Affiliation' },
   { i: '', nm: 'Member name', role: 'Title · Affiliation' },
   { i: '', nm: 'Member name', role: 'Title · Affiliation' }];
