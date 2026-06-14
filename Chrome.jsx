@@ -41,7 +41,7 @@ function SiteFooter() {
               <span className="nm">Open Credit Scoring</span>
             </span>
           </a>
-          <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: 14, maxWidth: '34ch', lineHeight: 1.6 }}>Establishing the Mathematical Foundations for Trustworthy Credit Decisions
+          <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: 14, maxWidth: '34ch', lineHeight: 1.6 }}>Advancing the Science of Credit Scoring
 
           </p>
         </div>

@@ -93,7 +93,7 @@ function SiteFooter() {
       maxWidth: '34ch',
       lineHeight: 1.6
     }
-  }, "Establishing the Mathematical Foundations for Trustworthy Credit Decisions"))), /*#__PURE__*/React.createElement("div", {
+  }, "Advancing the Science of Credit Scoring"))), /*#__PURE__*/React.createElement("div", {
     className: "wrap colophon"
   }, /*#__PURE__*/React.createElement("span", null, "\xA9 2026 Open Decisions Consortium")));
 }
