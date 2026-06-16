@@ -15,6 +15,8 @@ function renderCap(html) {
 }
 
 const FORMSPREE_CONTACT_ENDPOINT = 'https://formspree.io/f/maqzkoap';
+const KIT_NEWSLETTER_ENDPOINT = 'https://app.kit.com/forms/9572303/subscriptions';
+const KIT_NEWSLETTER_TARGET = 'kit-newsletter-target';
 
 async function submitContactForm(form) {
   const response = await fetch(FORMSPREE_CONTACT_ENDPOINT, {
@@ -26,30 +28,6 @@ async function submitContactForm(form) {
   if (!response.ok) {
     throw new Error('Contact form submission failed');
   }
-}
-
-function submitEmailForm(form, kind) {
-  const formData = new FormData(form);
-  const email = 'hello@opencreditscoring.org';
-
-  if (kind === 'newsletter') {
-    const subscriber = formData.get('email') || '';
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent('Newsletter signup')}&body=${encodeURIComponent(`Please add me to the Open Credit Scoring newsletter.\n\nEmail: ${subscriber}`)}`;
-    return;
-  }
-
-  const lines = [
-  'New inquiry from opencreditscoring.org',
-  '',
-  `Name: ${formData.get('name') || ''}`,
-  `Email: ${formData.get('email') || ''}`,
-  `Topic: ${formData.get('topic') || ''}`,
-  '',
-  'Message:',
-  formData.get('message') || ''];
-
-
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent('Open Credit Scoring inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
 }
 
 function Page({ onNav }) {
@@ -424,14 +402,23 @@ credit decision is fair, valid, and legally compliant?</p>
               <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.</p>
             </div>
             <div>
+              <iframe name={KIT_NEWSLETTER_TARGET} title="Newsletter signup" style={{ display: 'none' }} />
               {subscribed ? <Callout variant="note" title="subscribed">
-                Thanks for subscribing — you’ll hear from us when there’s something worth reading.
-              </Callout> : <form name="newsletter" onSubmit={(e) => {
-                  e.preventDefault();
-                  submitEmailForm(e.currentTarget, 'newsletter');
-                  setSubscribed(true);
-                }} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
-                <TextField label="Work email" name="email" type="email" placeholder="you@institution.org" required />
+                Success! Now check your email to confirm your subscription.
+              </Callout> : <form
+                name="newsletter"
+                action={KIT_NEWSLETTER_ENDPOINT}
+                method="post"
+                target={KIT_NEWSLETTER_TARGET}
+                data-sv-form="9572303"
+                data-uid="4dece259db"
+                data-format="inline"
+                data-version="5"
+                onSubmit={() => {
+                  window.setTimeout(() => setSubscribed(true), 500);
+                }}
+                style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
+                <TextField label="Work email" name="email_address" type="email" placeholder="you@institution.org" required />
                 <div>
                   <Button variant="primary" type="submit">Subscribe</Button>
                 </div>

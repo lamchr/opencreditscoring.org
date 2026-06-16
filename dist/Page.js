@@ -22,6 +22,8 @@ function renderCap(html) {
   return out;
 }
 const FORMSPREE_CONTACT_ENDPOINT = 'https://formspree.io/f/maqzkoap';
+const KIT_NEWSLETTER_ENDPOINT = 'https://app.kit.com/forms/9572303/subscriptions';
+const KIT_NEWSLETTER_TARGET = 'kit-newsletter-target';
 async function submitContactForm(form) {
   const response = await fetch(FORMSPREE_CONTACT_ENDPOINT, {
     method: 'POST',
@@ -33,17 +35,6 @@ async function submitContactForm(form) {
   if (!response.ok) {
     throw new Error('Contact form submission failed');
   }
-}
-function submitEmailForm(form, kind) {
-  const formData = new FormData(form);
-  const email = 'hello@opencreditscoring.org';
-  if (kind === 'newsletter') {
-    const subscriber = formData.get('email') || '';
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent('Newsletter signup')}&body=${encodeURIComponent(`Please add me to the Open Credit Scoring newsletter.\n\nEmail: ${subscriber}`)}`;
-    return;
-  }
-  const lines = ['New inquiry from opencreditscoring.org', '', `Name: ${formData.get('name') || ''}`, `Email: ${formData.get('email') || ''}`, `Topic: ${formData.get('topic') || ''}`, '', 'Message:', formData.get('message') || ''];
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent('Open Credit Scoring inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
 }
 function Page({
   onNav
@@ -917,15 +908,26 @@ function Page({
       marginTop: 16,
       maxWidth: '42ch'
     }
-  }, "Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.")), /*#__PURE__*/React.createElement("div", null, subscribed ? /*#__PURE__*/React.createElement(Callout, {
+  }, "Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("iframe", {
+    name: KIT_NEWSLETTER_TARGET,
+    title: "Newsletter signup",
+    style: {
+      display: 'none'
+    }
+  }), subscribed ? /*#__PURE__*/React.createElement(Callout, {
     variant: "note",
     title: "subscribed"
-  }, "Thanks for subscribing \u2014 you\u2019ll hear from us when there\u2019s something worth reading.") : /*#__PURE__*/React.createElement("form", {
+  }, "Success! Now check your email to confirm your subscription.") : /*#__PURE__*/React.createElement("form", {
     name: "newsletter",
-    onSubmit: e => {
-      e.preventDefault();
-      submitEmailForm(e.currentTarget, 'newsletter');
-      setSubscribed(true);
+    action: KIT_NEWSLETTER_ENDPOINT,
+    method: "post",
+    target: KIT_NEWSLETTER_TARGET,
+    "data-sv-form": "9572303",
+    "data-uid": "4dece259db",
+    "data-format": "inline",
+    "data-version": "5",
+    onSubmit: () => {
+      window.setTimeout(() => setSubscribed(true), 500);
     },
     style: {
       display: 'flex',
@@ -934,7 +936,7 @@ function Page({
     }
   }, /*#__PURE__*/React.createElement(TextField, {
     label: "Work email",
-    name: "email",
+    name: "email_address",
     type: "email",
     placeholder: "you@institution.org",
     required: true
