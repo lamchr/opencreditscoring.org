@@ -21,6 +21,19 @@ function renderCap(html) {
   if (last < html.length) out.push(html.slice(last));
   return out;
 }
+const FORMSPREE_CONTACT_ENDPOINT = 'https://formspree.io/f/maqzkoap';
+async function submitContactForm(form) {
+  const response = await fetch(FORMSPREE_CONTACT_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json'
+    },
+    body: new FormData(form)
+  });
+  if (!response.ok) {
+    throw new Error('Contact form submission failed');
+  }
+}
 function submitEmailForm(form, kind) {
   const formData = new FormData(form);
   const email = 'hello@opencreditscoring.org';
@@ -49,6 +62,7 @@ function Page({
     TextField
   } = DS;
   const [sent, setSent] = React.useState(false);
+  const [contactError, setContactError] = React.useState('');
   const [subscribed, setSubscribed] = React.useState(false);
   const standards = [{
     id: 'OCS-1',
@@ -792,17 +806,26 @@ function Page({
     title: "message received"
   }, "Thank you \u2014 we\u2019ve received your note and will be in touch.") : /*#__PURE__*/React.createElement("form", {
     name: "contact",
-    onSubmit: e => {
+    onSubmit: async e => {
       e.preventDefault();
-      submitEmailForm(e.currentTarget, 'contact');
-      setSent(true);
+      setContactError('');
+      try {
+        await submitContactForm(e.currentTarget);
+        setSent(true);
+      } catch (err) {
+        setContactError('We could not send your message. Please try again in a moment.');
+      }
     },
     style: {
       display: 'flex',
       flexDirection: 'column',
       gap: 'var(--space-5)'
     }
-  }, /*#__PURE__*/React.createElement(TextField, {
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "hidden",
+    name: "_subject",
+    value: "Open Credit Scoring inquiry"
+  }), /*#__PURE__*/React.createElement(TextField, {
     label: "Name",
     name: "name",
     placeholder: "Jane Researcher",
@@ -859,7 +882,15 @@ function Page({
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
     variant: "primary",
     type: "submit"
-  }, "Send Message")))))), /*#__PURE__*/React.createElement("div", {
+  }, "Send Message")), contactError && /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'var(--red-600)',
+      fontFamily: 'var(--font-sans)',
+      fontSize: 14,
+      lineHeight: 1.45
+    }
+  }, contactError))))), /*#__PURE__*/React.createElement("div", {
     className: "sec-block",
     style: {
       marginTop: 'var(--space-12)',

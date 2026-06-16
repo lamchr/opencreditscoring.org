@@ -14,6 +14,20 @@ function renderCap(html) {
   return out;
 }
 
+const FORMSPREE_CONTACT_ENDPOINT = 'https://formspree.io/f/maqzkoap';
+
+async function submitContactForm(form) {
+  const response = await fetch(FORMSPREE_CONTACT_ENDPOINT, {
+    method: 'POST',
+    headers: { Accept: 'application/json' },
+    body: new FormData(form)
+  });
+
+  if (!response.ok) {
+    throw new Error('Contact form submission failed');
+  }
+}
+
 function submitEmailForm(form, kind) {
   const formData = new FormData(form);
   const email = 'hello@opencreditscoring.org';
@@ -42,6 +56,7 @@ function Page({ onNav }) {
   const DS = window.OpenCreditScoringDesignSystem_c2a623;
   const { Button, Eyebrow, Card, Tag, StdRef, CausalBayesNet, Tabs, Select, Callout, TextField } = DS;
   const [sent, setSent] = React.useState(false);
+  const [contactError, setContactError] = React.useState('');
   const [subscribed, setSubscribed] = React.useState(false);
 
   const standards = [
@@ -368,11 +383,17 @@ credit decision is fair, valid, and legally compliant?</p>
             <div>
               {sent ? <Callout variant="note" title="message received">
                 Thank you — we’ve received your note and will be in touch.
-              </Callout> : <form name="contact" onSubmit={(e) => {
+              </Callout> : <form name="contact" onSubmit={async (e) => {
                   e.preventDefault();
-                  submitEmailForm(e.currentTarget, 'contact');
-                  setSent(true);
+                  setContactError('');
+                  try {
+                    await submitContactForm(e.currentTarget);
+                    setSent(true);
+                  } catch (err) {
+                    setContactError('We could not send your message. Please try again in a moment.');
+                  }
                 }} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-5)' }}>
+                <input type="hidden" name="_subject" value="Open Credit Scoring inquiry" />
                 <TextField label="Name" name="name" placeholder="Jane Researcher" required />
                 <TextField label="Work email" name="email" type="email" placeholder="you@institution.org" required />
                 <Select label="I’m reaching out about" name="topic" defaultValue="research" options={[
@@ -390,6 +411,7 @@ credit decision is fair, valid, and legally compliant?</p>
                 <div>
                   <Button variant="primary" type="submit">Send Message</Button>
                 </div>
+                {contactError && <p style={{ margin: 0, color: 'var(--red-600)', fontFamily: 'var(--font-sans)', fontSize: 14, lineHeight: 1.45 }}>{contactError}</p>}
               </form>
                 }
             </div>
