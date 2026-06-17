@@ -39,6 +39,7 @@ jobs:
           mkdir _site
           cp index.html site.css CNAME .nojekyll _site/
           cp -R assets dist _ds _site/
+          if [ -d uploads ]; then cp -R uploads _site/; fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

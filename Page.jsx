@@ -158,13 +158,9 @@ function Page({ onNav }) {
           <p className="lead">Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions and support a more open and competitive credit scoring ecosystem.</p>
         </div>
         <figure className="figure" style={{ margin: 0 }}>
-          <div className="video-ph">
-            <div className="video-ph-btn"><LucideIcon name="play" size={26} /></div>
-            <div className="video-ph-label">Explainer video · coming soon</div>
-          </div>
+          <img src="assets/cylinder-and-shadows.jpg" alt="A cylinder casting a square shadow under blue light and a round shadow under yellow light, illustrating how machine learning, causal modeling, and antidiscrimination law each see the same object differently." style={{ display: 'block', width: '100%', height: 'auto' }} />
           <figcaption>
-            <span className="fc-label">video</span>
-            <span className="fc-text">What is Open Credit Scoring?</span>
+            <span className="fc-text"><strong>A Common Foundation.</strong> Causal models enable us to translate concepts between antidiscrimination law and machine learning.</span>
           </figcaption>
         </figure>
       </section>
@@ -188,7 +184,6 @@ function Page({ onNav }) {
               <figure className="figure pj-fig">
                 <div className="plot" style={{ height: 200 }}><CausalBayesNet {...p.cbn} /></div>
                 <figcaption>
-                  <span className="fc-label">fig. {i + 1}</span>
                   <span className="fc-text">{renderCap(p.cap)}</span>
                 </figcaption>
               </figure>
@@ -221,7 +216,6 @@ function Page({ onNav }) {
                   )}
                 </div>
                 <figcaption>
-                  <span className="fc-label">fig. {i + 1}</span>
                   <span className="fc-text">{renderCap(p.cap)}</span>
                 </figcaption>
               </figure>
@@ -253,9 +247,6 @@ credit decision is fair, valid, and legally compliant?</p>
           <figure className="figure std-fig">
             <div className="plot" style={{ height: 200 }}><CausalBayesNet nodes={sfNodes} /></div>
             <figcaption>
-              <span className="fc-label">FIG. 4
-
-              </span>
               <span className="fc-text">{renderCap('<strong>Standard Fairness Model.</strong> Modeling the causal relationships between variables using a causal Bayesian network. In this example, the protected attribute (A) has a <strong style="color:var(--red-600)">direct negative effect</strong> on the credit decision (D).')}</span>
             </figcaption>
           </figure>

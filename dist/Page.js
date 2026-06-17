@@ -386,20 +386,17 @@ function Page({
     style: {
       margin: 0
     }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "video-ph"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "video-ph-btn"
-  }, /*#__PURE__*/React.createElement(LucideIcon, {
-    name: "play",
-    size: 26
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "video-ph-label"
-  }, "Explainer video \xB7 coming soon")), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
-    className: "fc-label"
-  }, "video"), /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "assets/cylinder-and-shadows.jpg",
+    alt: "A cylinder casting a square shadow under blue light and a round shadow under yellow light, illustrating how machine learning, causal modeling, and antidiscrimination law each see the same object differently.",
+    style: {
+      display: 'block',
+      width: '100%',
+      height: 'auto'
+    }
+  }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, "What is Open Credit Scoring?")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "A Common Foundation."), " Causal models enable us to translate concepts between antidiscrimination law and machine learning.")))), /*#__PURE__*/React.createElement("section", {
     id: "research",
     className: "section-band section-band--tint",
     style: anchor
@@ -426,8 +423,6 @@ function Page({
       height: 200
     }
   }, /*#__PURE__*/React.createElement(CausalBayesNet, p.cbn)), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
-    className: "fc-label"
-  }, "fig. ", i + 1), /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
   }, renderCap(p.cap)))), p.flow && /*#__PURE__*/React.createElement("figure", {
     className: "figure pj-fig"
@@ -512,8 +507,6 @@ function Page({
     strokeLinecap: "round",
     strokeLinejoin: "round"
   })))))), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
-    className: "fc-label"
-  }, "fig. ", i + 1), /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
   }, renderCap(p.cap))))))))), /*#__PURE__*/React.createElement("section", {
     id: "standards",
@@ -558,8 +551,6 @@ function Page({
   }, /*#__PURE__*/React.createElement(CausalBayesNet, {
     nodes: sfNodes
   })), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
-    className: "fc-label"
-  }, "FIG. 4"), /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
   }, renderCap('<strong>Standard Fairness Model.</strong> Modeling the causal relationships between variables using a causal Bayesian network. In this example, the protected attribute (A) has a <strong style="color:var(--red-600)">direct negative effect</strong> on the credit decision (D).')))))), /*#__PURE__*/React.createElement("section", {
     id: "governance",
