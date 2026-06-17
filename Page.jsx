@@ -160,7 +160,7 @@ function Page({ onNav }) {
         <figure className="figure" style={{ margin: 0 }}>
           <img src="assets/cylinder-and-shadows.jpg" alt="A cylinder casting a square shadow under blue light and a round shadow under yellow light, illustrating how machine learning, causal modeling, and antidiscrimination law each see the same object differently." style={{ display: 'block', width: '100%', height: 'auto' }} />
           <figcaption>
-            <span className="fc-text"><strong>A Common Foundation.</strong> Causal models enable us to translate concepts between antidiscrimination law and machine learning.</span>
+            <span className="fc-text"><strong>Common Foundation.</strong> Causal models enable us to translate concepts between antidiscrimination law and machine learning.</span>
           </figcaption>
         </figure>
       </section>
@@ -239,7 +239,7 @@ function Page({ onNav }) {
               <Tag variant="blue" mono square>IEEE P3591</Tag>
               <Tag variant="warn" dot>in development</Tag>
             </div>
-            <h3 style={{ fontSize: "28px" }}>Fair Decision Making Through Causal Analysis</h3>
+            <h3 style={{ fontSize: "28px" }}><a href="https://standards.ieee.org/ieee/3591/12101/" target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "none" }}>Fair Decision Making Through Causal Analysis</a></h3>
             <p className="std-q" style={{ fontSize: "19px" }}>How can organizations determine whether an AI
 credit decision is fair, valid, and legally compliant?</p>
             <p className="std-d" style={{ fontSize: "15px" }}>IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.</p>

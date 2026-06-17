@@ -396,7 +396,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "A Common Foundation."), " Causal models enable us to translate concepts between antidiscrimination law and machine learning.")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Common Foundation."), " Causal models enable us to translate concepts between antidiscrimination law and machine learning.")))), /*#__PURE__*/React.createElement("section", {
     id: "research",
     className: "section-band section-band--tint",
     style: anchor
@@ -531,7 +531,15 @@ function Page({
     style: {
       fontSize: "28px"
     }
-  }, "Fair Decision Making Through Causal Analysis"), /*#__PURE__*/React.createElement("p", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://standards.ieee.org/ieee/3591/12101/",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      color: "inherit",
+      textDecoration: "none"
+    }
+  }, "Fair Decision Making Through Causal Analysis")), /*#__PURE__*/React.createElement("p", {
     className: "std-q",
     style: {
       fontSize: "19px"
