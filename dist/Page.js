@@ -426,7 +426,7 @@ function Page({
       color: 'var(--ink-800)',
       margin: '24px 0 0'
     }
-  }, "Yet while AI capabilities continue to advance, the scientific foundations for ensuring these systems remain trustworthy have not kept pace. Many of the challenges that emerged with traditional machine learning\u2014including fairness, validity, transparency, and governance\u2014remain unresolved. As lenders automate larger portions of the credit lifecycle, these challenges may become amplified. The challenge is not simply building more powerful AI systems\u2014it is understanding how those systems interact with the complex social, economic, and legal systems in which they operate.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Yet while AI capabilities continue to advance, the scientific foundations for ensuring these systems remain trustworthy have not kept pace. Many of the challenges that emerged with traditional machine learning\u2014including fairness, validity, transparency, and governance\u2014remain unresolved. As lenders automate larger portions of the credit lifecycle, these challenges may become amplified. The solution is not simply building more powerful AI systems\u2014it is understanding how those systems interact with the complex social, economic, and legal systems in which they operate.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
