@@ -381,7 +381,7 @@ function Page({
     }
   }, "Credit Scoring Is a Complex Systems Problem"), /*#__PURE__*/React.createElement("p", {
     className: "lead"
-  }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions\xA0and foster a more open, competitive, and innovative credit scoring ecosystem.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions\xA0while fostering a more open, competitive, and innovative credit scoring ecosystem.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -398,7 +398,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Most AI research is focused on data, models, and decisions. But many AI problems in credit scoring require understanding the social system that generates the data, the consequences of decisions, and their feedback loops.")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Most AI research focuses on data, models, and decisions. Many credit-scoring challenges arise from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
     id: "why",
     className: "section-band section-band--tint",
     style: anchor
