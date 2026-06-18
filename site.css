@@ -9,7 +9,7 @@
 .site-header {
   position: sticky; top: 0; z-index: 100;
   padding-block: 14px;
-  background: rgba(23, 62, 105, 0.92);
+  background: rgba(11, 34, 56, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -166,7 +166,7 @@
 .news-cta .nc-form .ocs-field__label { color: rgba(255, 255, 255, 0.92); }
 .news-cta .nc-confirm { font-family: var(--font-serif); font-style: italic; font-size: 21px; color: #fff; margin: 0; max-width: 30ch; line-height: 1.4; }
 /* ── Footer ────────────────────────────────────────────────── */
-.site-footer { background: var(--blue-700); color: rgba(255, 255, 255, 0.82); border-top: none; }
+.site-footer { background: var(--blue-900); color: rgba(255, 255, 255, 0.82); border-top: none; }
 .site-footer .footer-news { margin-top: var(--space-8); }
 .site-footer .footer-news .fn-copy h4 { font-family: var(--font-serif); font-size: 17px; font-weight: 400; letter-spacing: -0.01em; color: var(--ink-900); margin: 0; text-transform: none; }
 .site-footer .footer-news .fn-copy p { font-family: var(--font-sans); font-size: 13px; color: var(--ink-700); margin: 6px 0 0; max-width: 40ch; line-height: 1.55; }
