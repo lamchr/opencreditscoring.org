@@ -381,7 +381,7 @@ function Page({
     }
   }, "Credit Scoring Is a Complex Systems Problem"), /*#__PURE__*/React.createElement("p", {
     className: "lead"
-  }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy credit decisions\xA0while fostering a more open, competitive, and innovative credit scoring ecosystem.")), /*#__PURE__*/React.createElement("figure", {
+  }, "As lenders increasingly automate credit decisions with AI, many of the industry's most important challenges\u2014including fairness, validity, and governance\u2014cannot be solved through machine learning alone.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -398,7 +398,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Most AI research focuses on data, models, and decisions. Many credit-scoring challenges arise from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Many of the most important challenges in credit scoring arise not from AI models themselves, but from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
     id: "why",
     className: "section-band section-band--tint",
     style: anchor
@@ -426,7 +426,15 @@ function Page({
       color: 'var(--ink-800)',
       margin: '24px 0 0'
     }
-  }, "Yet while AI capabilities continue to advance, the scientific foundations for ensuring these systems remain trustworthy have not kept pace. Many of the challenges that emerged with traditional machine learning\u2014including fairness, validity, transparency, and governance\u2014remain unresolved. As lenders automate larger portions of the credit lifecycle, these challenges may become amplified. The solution is not simply building more powerful AI systems\u2014it is understanding how those systems interact with the complex social, economic, and legal systems in which they operate.")), /*#__PURE__*/React.createElement("figure", {
+  }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy AI-enabled credit decisions. Rather than treating fairness, validity, transparency, and governance as isolated challenges, we approach them as properties of a larger complex system that includes people, institutions, policies, and feedback loops."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontFamily: 'var(--font-sans)',
+      fontSize: 17,
+      lineHeight: 1.72,
+      color: 'var(--ink-800)',
+      margin: '18px 0 0'
+    }
+  }, "To understand and improve these systems, we use systems thinking to integrate machine learning, causal inference, and system dynamics into a unified framework for studying AI-enabled credit decisions. Together, these approaches help explain not only how models make predictions, but how AI systems shape\u2014and are shaped by\u2014the social, economic, and legal systems in which they operate.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
@@ -439,7 +447,7 @@ function Page({
       backgroundImage: 'none'
     },
     dangerouslySetInnerHTML: {
-      __html: `<svg viewBox="0 0 560 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Concentric boxes: Machine Learning at the center, surrounded by Causal Inference, then System Dynamics, then Systems Thinking"><rect x="24" y="18" width="512" height="404" rx="6" fill="var(--blue-100)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="70" y="64" width="420" height="312" rx="6" fill="var(--blue-300)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="116" y="110" width="328" height="220" rx="6" fill="var(--blue-600)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="162" y="156" width="236" height="128" rx="6" fill="var(--blue-900)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><text x="280" y="49" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">Systems Thinking</text><text x="280" y="95" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">System Dynamics</text><text x="280" y="141" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Causal Inference</text><text x="280" y="227" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Machine Learning</text></svg>`
+      __html: `<svg viewBox="0 0 560 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Concentric boxes: Machine Learning at the center, surrounded by Causal Inference, then System Dynamics, then Systems Thinking"><rect x="24" y="18" width="512" height="404" rx="6" fill="var(--blue-100)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="70" y="64" width="420" height="312" rx="6" fill="var(--blue-300)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="116" y="110" width="328" height="220" rx="6" fill="var(--blue-600)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="162" y="156" width="236" height="128" rx="6" fill="var(--blue-900)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><text x="280" y="49" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">Systems Thinking</text><text x="280" y="95" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">System Dynamics</text><text x="280" y="141" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Causal Inference</text><text x="280" y="187" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Machine Learning</text><text x="280" y="268" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Prediction</text><text x="280" y="314" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Intervention</text><text x="280" y="360" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Feedback</text></svg>`
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
