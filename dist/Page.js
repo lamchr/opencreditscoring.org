@@ -398,7 +398,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Most AI research focuses on data, models, and decisions. Many credit-scoring challenges arise from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Complex System."), " Most AI research focuses on data, models, and decisions. Many credit-scoring challenges arise from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
     id: "why",
     className: "section-band section-band--tint",
     style: anchor
@@ -443,7 +443,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Outside the Black Box."), " Most AI research focuses on what happens inside the machine learning model. We expand our focus beyond machine learning to understand how AI interacts with people, institutions, and society."))))))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Outside the Black Box."), " Machine learning is only one layer of a larger complex system. We integrate causal inference, system dynamics, and systems thinking to understand how AI operates in the real world."))))))), /*#__PURE__*/React.createElement("section", {
     id: "research",
     className: "wrap section",
     style: anchor
