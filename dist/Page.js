@@ -398,7 +398,7 @@ function Page({
     }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " Many of the most important challenges in credit scoring arise not from AI models themselves, but from the social systems that generate data, shape outcomes, and create feedback loops.")))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " While AI research has focused heavily on data, models, and decisions, the broader social systems that generate data, shape consequences, and create feedback loops remain comparatively under-studied.")))), /*#__PURE__*/React.createElement("section", {
     id: "why",
     className: "section-band section-band--tint",
     style: anchor
