@@ -415,62 +415,7 @@ function Page({
     }
   }, /*#__PURE__*/React.createElement("div", { className: "plot", style: { height: 380, padding: '24px', backgroundImage: 'none' }, dangerouslySetInnerHTML: { __html: `<svg viewBox="0 0 560 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Concentric boxes: Machine Learning at the center, surrounded by Causal Inference, then System Dynamics, then Systems Thinking"><rect x="24" y="18" width="512" height="404" rx="6" fill="var(--blue-100)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="70" y="64" width="420" height="312" rx="6" fill="var(--blue-300)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="116" y="110" width="328" height="220" rx="6" fill="var(--blue-600)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="162" y="156" width="236" height="128" rx="6" fill="var(--blue-900)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><text x="280" y="49" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">Systems Thinking</text><text x="280" y="95" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">System Dynamics</text><text x="280" y="141" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Causal Inference</text><text x="280" y="187" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Machine Learning</text><text x="280" y="268" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Prediction</text><text x="280" y="314" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Intervention</text><text x="280" y="360" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Feedback</text><text x="280" y="406" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Emergence</text></svg>` } }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Systems Thinking."), " Machine learning is only one layer of a larger complex system. We model emergent behavior across machine learning, causal inference, and system dynamics to understand how AI systems operate in the real world."))))), /*#__PURE__*/React.createElement("div", {
-    className: "sec-block",
-    style: { marginTop: 'var(--space-10)', borderTop: '1px solid var(--line)', paddingTop: 'var(--space-10)' }
-  }, /*#__PURE__*/React.createElement("table", {
-    style: { width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-sans)' }
-  }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", {
-    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'left', padding: '18px 20px' }
-  }), /*#__PURE__*/React.createElement("th", {
-    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
-  }, "1st Generation"), /*#__PURE__*/React.createElement("th", {
-    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
-  }, "2nd Generation", /*#__PURE__*/React.createElement("br", null), "(Current)"), /*#__PURE__*/React.createElement("th", {
-    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
-  }, "3rd Generation", /*#__PURE__*/React.createElement("br", null), "(Future)"))), /*#__PURE__*/React.createElement("tbody", null, [{
-    label: 'Model',
-    v1: 'Proprietary',
-    v2: 'Proprietary',
-    v3: 'Open'
-  }, {
-    label: 'AI Technology',
-    v1: 'Logistic Regression',
-    v2: 'Machine Learning',
-    v3: 'Causal AI'
-  }, {
-    label: 'Accuracy',
-    v1: 'Low',
-    c1: 'var(--red-600)',
-    v2: 'Medium',
-    v3: 'High',
-    c3: 'var(--ok-600)'
-  }, {
-    label: 'Trust',
-    v1: 'Medium',
-    v2: 'Low',
-    c2: 'var(--red-600)',
-    v3: 'High',
-    c3: 'var(--ok-600)'
-  }, {
-    label: 'Cost',
-    v1: 'Medium',
-    v2: 'High',
-    c2: 'var(--red-600)',
-    v3: 'Low',
-    c3: 'var(--ok-600)'
-  }].map((row, idx) => /*#__PURE__*/React.createElement("tr", {
-    key: idx,
-    style: { borderTop: '1px solid var(--line)' }
-  }, /*#__PURE__*/React.createElement("td", {
-    style: { padding: '20px', textAlign: 'center', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 19, color: 'var(--ink-900)' }
-  }, row.label), /*#__PURE__*/React.createElement("td", {
-    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c1 || 'var(--ink-900)' }
-  }, row.v1), /*#__PURE__*/React.createElement("td", {
-    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c2 || 'var(--ink-900)' }
-  }, row.v2), /*#__PURE__*/React.createElement("td", {
-    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c3 || 'var(--ink-900)' }
-  }, row.v3)))))))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Systems Thinking."), " Machine learning is only one layer of a larger complex system. We model emergent behavior across machine learning, causal inference, and system dynamics to understand how AI systems operate in the real world."))))))), /*#__PURE__*/React.createElement("section", {
     id: "research",
     className: "wrap section",
     style: anchor
