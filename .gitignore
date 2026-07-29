@@ -16,3 +16,6 @@ screenshots/
 
 # Dev-only live preview (transpiles .jsx in-browser; not part of the build)
 preview.html
+
+# Claude Code local settings
+.claude/

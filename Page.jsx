@@ -188,10 +188,33 @@ function Page({ onNav }) {
         </figure>
         </div>
         </div>
+        <div className="sec-block" style={{ marginTop: 'var(--space-10)', borderTop: '1px solid var(--line)', paddingTop: 'var(--space-10)' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-sans)' }}>
+            <thead>
+              <tr>
+                <th style={{ background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'left', padding: '18px 20px' }}></th>
+                <th style={{ background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }}>1st Generation</th>
+                <th style={{ background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }}>2nd Generation<br />(Current)</th>
+                <th style={{ background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }}>3rd Generation<br />(Future)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { label: 'Model', v1: 'Proprietary', v2: 'Proprietary', v3: 'Open' },
+                { label: 'AI Technology', v1: 'Logistic Regression', v2: 'Machine Learning', v3: 'Causal AI' },
+                { label: 'Accuracy', v1: 'Low', c1: 'var(--red-600)', v2: 'Medium', v3: 'High', c3: 'var(--ok-600)' },
+                { label: 'Trust', v1: 'Medium', v2: 'Low', c2: 'var(--red-600)', v3: 'High', c3: 'var(--ok-600)' },
+                { label: 'Cost', v1: 'Medium', v2: 'High', c2: 'var(--red-600)', v3: 'Low', c3: 'var(--ok-600)' }].map((row, idx) => <tr key={idx} style={{ borderTop: '1px solid var(--line)' }}>
+                  <td style={{ padding: '20px', textAlign: 'center', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 19, color: 'var(--ink-900)' }}>{row.label}</td>
+                  <td style={{ padding: '20px', textAlign: 'center', fontSize: 18, color: row.c1 || 'var(--ink-900)' }}>{row.v1}</td>
+                  <td style={{ padding: '20px', textAlign: 'center', fontSize: 18, color: row.c2 || 'var(--ink-900)' }}>{row.v2}</td>
+                  <td style={{ padding: '20px', textAlign: 'center', fontSize: 18, color: row.c3 || 'var(--ink-900)' }}>{row.v3}</td>
+                </tr>)}
+            </tbody>
+          </table>
+        </div>
         </div>
       </section>
-
-      {/* ── Research ─────────────────────────────────────────── */}
       <section id="research" className="wrap section" style={anchor}>
         <div className="section-head">
           <div>
@@ -280,10 +303,10 @@ credit decision is fair, valid, and legally compliant?</p>
       </section>
 
       {/* ── Governance ───────────────────────────────────────── */}
-      <section id="governance" className="wrap section" style={{ ...anchor, paddingBottom: 'var(--space-12)' }}>
+      <section id="about" className="wrap section" style={{ ...anchor, paddingBottom: 'var(--space-12)' }}>
         <div className="section-head">
           <div>
-            <h2>Governance</h2>
+            <h2>About</h2>
           </div>
         </div>
         <div className="sec-block">
@@ -325,41 +348,9 @@ credit decision is fair, valid, and legally compliant?</p>
         </div>
       </section>
 
-      {/* ── About ────────────────────────────────────────────── */}
-      <section id="about" className="section-band section-band--tint" style={anchor}>
-        <div className="wrap section">
-        <div className="section-head">
-          <div>
-            <h2>About</h2>
-          </div>
-        </div>
-        <div className="sec-block">
-          <h3 className="sub-label" style={{ fontSize: "28px" }}>Founding Team</h3>
-          <div className="people">
-            {team.map((p, idx) => <div className="person" key={idx}>
-                <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
-                <div>
-                  <div className="nm">{p.nm}</div>
-                  <div className="role">{p.role}</div>
-                </div>
-              </div>)}
-          </div>
-          <h3 className="sub-label" style={{ marginTop: 'var(--space-12)', fontSize: "28px" }}>Advisors</h3>
-          <div className="people">
-            {advisors.map((p, idx) => <div className="person" key={idx}>
-                <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
-                <div>
-                  <div className="nm">{p.nm}</div>
-                  <div className="role">{p.role}</div>
-                </div>
-              </div>)}
-          </div>
-        </div>
-        </div>
-      </section>
-
       {/* ── Contact ───────────────────────────────────────── */}
-      <section id="contact" className="wrap section" style={anchor}>
+      <section id="contact" className="section-band section-band--tint" style={anchor}>
+        <div className="wrap section">
         <div className="section-head">
           <div>
             <h2>Get Involved</h2>
@@ -440,6 +431,7 @@ credit decision is fair, valid, and legally compliant?</p>
                 }
             </div>
           </div>
+        </div>
         </div>
       </section>
 

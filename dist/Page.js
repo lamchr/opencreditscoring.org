@@ -383,19 +383,11 @@ function Page({
     className: "lead"
   }, "As lenders increasingly automate credit decisions with AI, many of the industry's most important challenges\u2014including fairness, validity, and governance\u2014cannot be solved through machine learning alone.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
-    style: {
-      margin: 0
-    }
+    style: { margin: 0 }
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",
-    style: {
-      height: 360,
-      padding: '18px 0',
-      backgroundImage: 'none'
-    },
-    dangerouslySetInnerHTML: {
-      __html: `<svg viewBox="0 0 580 480" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Iceberg-style feedback loop: a well-studied top half (AI Model, Decisions, Data) above the waterline and an under-studied bottom half (Consequences, Social System, Data Generating Process) shaded navy below it"><defs><marker id="whyAh" markerWidth="12" markerHeight="12" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 L3.4,5 Z" fill="var(--blue-700)"></path></marker><marker id="whyAhW" markerWidth="12" markerHeight="12" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 L3.4,5 Z" fill="var(--paper-0)"></path></marker><clipPath id="whyBtm"><rect x="-300" y="240" width="1180" height="600"></rect></clipPath></defs><path d="M331.1 75.0 A 170 170 0 0 1 418.3 128.5" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M450.7 184.7 A 170 170 0 0 1 452.6 289.7" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M403.8 366.3 A 170 170 0 0 1 334.0 404.2" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M246.0 404.2 A 170 170 0 0 1 176.2 366.3" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M127.4 289.7 A 170 170 0 0 1 129.3 184.7" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M161.7 128.5 A 170 170 0 0 1 248.9 75.0" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><text x="290.0" y="63.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">AI</text><text x="290.0" y="90.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Model</text><text x="437.2" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Decisions</text><text x="437.2" y="332.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Consequences</text><text x="290.0" y="403.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Social</text><text x="290.0" y="430.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">System</text><text x="142.8" y="318.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Data Generating</text><text x="142.8" y="345.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Process</text><text x="142.8" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Data</text><rect x="-300" y="240" width="1180" height="600" fill="var(--blue-700)"></rect><g clip-path="url(#whyBtm)"><path d="M331.1 75.0 A 170 170 0 0 1 418.3 128.5" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M450.7 184.7 A 170 170 0 0 1 452.6 289.7" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M403.8 366.3 A 170 170 0 0 1 334.0 404.2" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M246.0 404.2 A 170 170 0 0 1 176.2 366.3" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M127.4 289.7 A 170 170 0 0 1 129.3 184.7" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M161.7 128.5 A 170 170 0 0 1 248.9 75.0" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><text x="290.0" y="63.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">AI</text><text x="290.0" y="90.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Model</text><text x="437.2" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Decisions</text><text x="437.2" y="332.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Consequences</text><text x="290.0" y="403.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Social</text><text x="290.0" y="430.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">System</text><text x="142.8" y="318.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Data Generating</text><text x="142.8" y="345.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Process</text><text x="142.8" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Data</text></g><text x="290" y="224" text-anchor="middle" font-family="var(--font-mono)" font-size="16" letter-spacing="2" fill="var(--ink-700)">WELL-STUDIED</text><text x="290" y="267" text-anchor="middle" font-family="var(--font-mono)" font-size="16" letter-spacing="2" fill="var(--paper-0)">UNDER-STUDIED</text></svg>`
-    }
+    style: { height: 360, padding: '18px 0', backgroundImage: 'none' },
+    dangerouslySetInnerHTML: { __html: `<svg viewBox="0 0 580 480" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Iceberg-style feedback loop: a well-studied top half (AI Model, Decisions, Data) above the waterline and an under-studied bottom half (Consequences, Social System, Data Generating Process) shaded navy below it"><defs><marker id="whyAh" markerWidth="12" markerHeight="12" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 L3.4,5 Z" fill="var(--blue-700)"></path></marker><marker id="whyAhW" markerWidth="12" markerHeight="12" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 L3.4,5 Z" fill="var(--paper-0)"></path></marker><clipPath id="whyBtm"><rect x="-300" y="240" width="1180" height="600"></rect></clipPath></defs><path d="M331.1 75.0 A 170 170 0 0 1 418.3 128.5" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M450.7 184.7 A 170 170 0 0 1 452.6 289.7" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M403.8 366.3 A 170 170 0 0 1 334.0 404.2" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M246.0 404.2 A 170 170 0 0 1 176.2 366.3" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M127.4 289.7 A 170 170 0 0 1 129.3 184.7" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><path d="M161.7 128.5 A 170 170 0 0 1 248.9 75.0" fill="none" stroke="var(--blue-700)" stroke-width="1.8" marker-end="url(#whyAh)"></path><text x="290.0" y="63.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">AI</text><text x="290.0" y="90.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Model</text><text x="437.2" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Decisions</text><text x="437.2" y="332.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Consequences</text><text x="290.0" y="403.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Social</text><text x="290.0" y="430.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">System</text><text x="142.8" y="318.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Data Generating</text><text x="142.8" y="345.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Process</text><text x="142.8" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--ink-900)">Data</text><rect x="-300" y="240" width="1180" height="600" fill="var(--blue-700)"></rect><g clip-path="url(#whyBtm)"><path d="M331.1 75.0 A 170 170 0 0 1 418.3 128.5" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M450.7 184.7 A 170 170 0 0 1 452.6 289.7" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M403.8 366.3 A 170 170 0 0 1 334.0 404.2" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M246.0 404.2 A 170 170 0 0 1 176.2 366.3" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M127.4 289.7 A 170 170 0 0 1 129.3 184.7" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><path d="M161.7 128.5 A 170 170 0 0 1 248.9 75.0" fill="none" stroke="var(--paper-0)" stroke-width="1.8" marker-end="url(#whyAhW)"></path><text x="290.0" y="63.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">AI</text><text x="290.0" y="90.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Model</text><text x="437.2" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Decisions</text><text x="437.2" y="332.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Consequences</text><text x="290.0" y="403.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Social</text><text x="290.0" y="430.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">System</text><text x="142.8" y="318.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Data Generating</text><text x="142.8" y="345.5" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Process</text><text x="142.8" y="162.0" text-anchor="middle" font-family="var(--font-serif)" font-size="22" fill="var(--paper-0)">Data</text></g><text x="290" y="224" text-anchor="middle" font-family="var(--font-mono)" font-size="16" letter-spacing="2" fill="var(--ink-700)">WELL-STUDIED</text><text x="290" y="267" text-anchor="middle" font-family="var(--font-mono)" font-size="16" letter-spacing="2" fill="var(--paper-0)">UNDER-STUDIED</text></svg>` }
   }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
   }, /*#__PURE__*/React.createElement("strong", null, "Complex Systems."), " While AI research has focused heavily on data, models, and decisions, the broader social systems that generate data, shape consequences, and create feedback loops remain comparatively under-studied.")))), /*#__PURE__*/React.createElement("section", {
@@ -411,47 +403,74 @@ function Page({
   }, /*#__PURE__*/React.createElement("div", {
     className: "gov-grid"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
-    style: {
-      fontFamily: 'var(--font-sans)',
-      fontSize: 17,
-      lineHeight: 1.72,
-      color: 'var(--ink-800)',
-      margin: 0
-    }
+    style: { fontFamily: 'var(--font-sans)', fontSize: 17, lineHeight: 1.72, color: 'var(--ink-800)', margin: 0 }
   }, "Financial services is entering a new era of AI-driven decision making. From machine learning models to generative and agentic AI systems, lenders are rapidly adopting increasingly sophisticated technologies to automate underwriting, improve operations, and expand access to credit."), /*#__PURE__*/React.createElement("p", {
-    style: {
-      fontFamily: 'var(--font-sans)',
-      fontSize: 17,
-      lineHeight: 1.72,
-      color: 'var(--ink-800)',
-      margin: '24px 0 0'
-    }
+    style: { fontFamily: 'var(--font-sans)', fontSize: 17, lineHeight: 1.72, color: 'var(--ink-800)', margin: '24px 0 0' }
   }, "Open Credit Scoring seeks to establish the scientific foundations for trustworthy AI-enabled credit decisions. Rather than treating fairness, validity, transparency, and governance as isolated challenges, we approach them as properties of a larger complex system that includes people, institutions, policies, and feedback loops."), /*#__PURE__*/React.createElement("p", {
-    style: {
-      fontFamily: 'var(--font-sans)',
-      fontSize: 17,
-      lineHeight: 1.72,
-      color: 'var(--ink-800)',
-      margin: '18px 0 0'
-    }
+    style: { fontFamily: 'var(--font-sans)', fontSize: 17, lineHeight: 1.72, color: 'var(--ink-800)', margin: '18px 0 0' }
   }, "To understand and improve these systems, we use systems thinking to integrate machine learning, causal inference, and system dynamics into a unified framework for studying AI-enabled credit decisions. Together, these approaches help explain not only how models make predictions, but how AI systems shape\u2014and are shaped by\u2014the social, economic, and legal systems in which they operate.")), /*#__PURE__*/React.createElement("figure", {
     className: "figure",
     style: {
       margin: 0
     }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "plot",
-    style: {
-      height: 380,
-      padding: '24px',
-      backgroundImage: 'none'
-    },
-    dangerouslySetInnerHTML: {
-      __html: `<svg viewBox="0 0 560 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Concentric boxes: Machine Learning at the center, surrounded by Causal Inference, then System Dynamics, then Systems Thinking"><rect x="24" y="18" width="512" height="404" rx="6" fill="var(--blue-100)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="70" y="64" width="420" height="312" rx="6" fill="var(--blue-300)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="116" y="110" width="328" height="220" rx="6" fill="var(--blue-600)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="162" y="156" width="236" height="128" rx="6" fill="var(--blue-900)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><text x="280" y="49" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">Systems Thinking</text><text x="280" y="95" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">System Dynamics</text><text x="280" y="141" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Causal Inference</text><text x="280" y="187" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Machine Learning</text><text x="280" y="268" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Prediction</text><text x="280" y="314" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Intervention</text><text x="280" y="360" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Feedback</text><text x="280" y="406" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Emergence</text></svg>`
-    }
-  }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("div", { className: "plot", style: { height: 380, padding: '24px', backgroundImage: 'none' }, dangerouslySetInnerHTML: { __html: `<svg viewBox="0 0 560 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Concentric boxes: Machine Learning at the center, surrounded by Causal Inference, then System Dynamics, then Systems Thinking"><rect x="24" y="18" width="512" height="404" rx="6" fill="var(--blue-100)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="70" y="64" width="420" height="312" rx="6" fill="var(--blue-300)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="116" y="110" width="328" height="220" rx="6" fill="var(--blue-600)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><rect x="162" y="156" width="236" height="128" rx="6" fill="var(--blue-900)" stroke="rgba(21,24,30,0.10)" stroke-width="1"></rect><text x="280" y="49" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">Systems Thinking</text><text x="280" y="95" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--ink-900)">System Dynamics</text><text x="280" y="141" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Causal Inference</text><text x="280" y="187" text-anchor="middle" font-family="var(--font-serif)" font-size="21" fill="var(--paper-0)">Machine Learning</text><text x="280" y="268" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Prediction</text><text x="280" y="314" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--paper-0)">Intervention</text><text x="280" y="360" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Feedback</text><text x="280" y="406" text-anchor="middle" font-family="var(--font-serif)" font-style="italic" font-size="21" fill="var(--ink-900)">Emergence</text></svg>` } }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
-  }, /*#__PURE__*/React.createElement("strong", null, "Systems Thinking."), " Machine learning is only one layer of a larger complex system. We model emergent behavior across machine learning, causal inference, and system dynamics to understand how AI systems operate in the real world."))))))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("strong", null, "Systems Thinking."), " Machine learning is only one layer of a larger complex system. We model emergent behavior across machine learning, causal inference, and system dynamics to understand how AI systems operate in the real world."))))), /*#__PURE__*/React.createElement("div", {
+    className: "sec-block",
+    style: { marginTop: 'var(--space-10)', borderTop: '1px solid var(--line)', paddingTop: 'var(--space-10)' }
+  }, /*#__PURE__*/React.createElement("table", {
+    style: { width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-sans)' }
+  }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", {
+    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'left', padding: '18px 20px' }
+  }), /*#__PURE__*/React.createElement("th", {
+    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
+  }, "1st Generation"), /*#__PURE__*/React.createElement("th", {
+    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
+  }, "2nd Generation", /*#__PURE__*/React.createElement("br", null), "(Current)"), /*#__PURE__*/React.createElement("th", {
+    style: { background: 'var(--blue-700)', color: 'var(--paper-0)', textAlign: 'center', padding: '18px 20px', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, fontSize: 20 }
+  }, "3rd Generation", /*#__PURE__*/React.createElement("br", null), "(Future)"))), /*#__PURE__*/React.createElement("tbody", null, [{
+    label: 'Model',
+    v1: 'Proprietary',
+    v2: 'Proprietary',
+    v3: 'Open'
+  }, {
+    label: 'AI Technology',
+    v1: 'Logistic Regression',
+    v2: 'Machine Learning',
+    v3: 'Causal AI'
+  }, {
+    label: 'Accuracy',
+    v1: 'Low',
+    c1: 'var(--red-600)',
+    v2: 'Medium',
+    v3: 'High',
+    c3: 'var(--ok-600)'
+  }, {
+    label: 'Trust',
+    v1: 'Medium',
+    v2: 'Low',
+    c2: 'var(--red-600)',
+    v3: 'High',
+    c3: 'var(--ok-600)'
+  }, {
+    label: 'Cost',
+    v1: 'Medium',
+    v2: 'High',
+    c2: 'var(--red-600)',
+    v3: 'Low',
+    c3: 'var(--ok-600)'
+  }].map((row, idx) => /*#__PURE__*/React.createElement("tr", {
+    key: idx,
+    style: { borderTop: '1px solid var(--line)' }
+  }, /*#__PURE__*/React.createElement("td", {
+    style: { padding: '20px', textAlign: 'center', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontSize: 19, color: 'var(--ink-900)' }
+  }, row.label), /*#__PURE__*/React.createElement("td", {
+    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c1 || 'var(--ink-900)' }
+  }, row.v1), /*#__PURE__*/React.createElement("td", {
+    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c2 || 'var(--ink-900)' }
+  }, row.v2), /*#__PURE__*/React.createElement("td", {
+    style: { padding: '20px', textAlign: 'center', fontSize: 18, color: row.c3 || 'var(--ink-900)' }
+  }, row.v3)))))))), /*#__PURE__*/React.createElement("section", {
     id: "research",
     className: "wrap section",
     style: anchor
@@ -616,15 +635,12 @@ function Page({
   })), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("span", {
     className: "fc-text"
   }, renderCap('<strong>Standard Fairness Model.</strong> Modeling the causal relationships between variables using a causal Bayesian network. In this example, the protected attribute (A) has a <strong style="color:var(--red-600)">direct negative effect</strong> on the credit decision (D).'))))))), /*#__PURE__*/React.createElement("section", {
-    id: "governance",
+    id: "about",
     className: "wrap section",
-    style: {
-      ...anchor,
-      paddingBottom: 'var(--space-12)'
-    }
+    style: { ...anchor, paddingBottom: 'var(--space-12)' }
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Governance"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "About"))), /*#__PURE__*/React.createElement("div", {
     className: "sec-block"
   }, /*#__PURE__*/React.createElement("div", {
     className: "gov-grid"
@@ -742,9 +758,7 @@ function Page({
     className: "lbl"
   }, "Government")))))))), /*#__PURE__*/React.createElement("section", {
     className: "wrap section",
-    style: {
-      paddingTop: 0
-    }
+    style: { paddingTop: 0 }
   }, /*#__PURE__*/React.createElement("div", {
     className: "stakeholders"
   }, stakeholders.map(sh => /*#__PURE__*/React.createElement("div", {
@@ -758,58 +772,11 @@ function Page({
   })), /*#__PURE__*/React.createElement("h3", null, sh.h), /*#__PURE__*/React.createElement("p", {
     className: "sh-tag"
   }, sh.tag), /*#__PURE__*/React.createElement("p", null, sh.p))))), /*#__PURE__*/React.createElement("section", {
-    id: "about",
+    id: "contact",
     className: "section-band section-band--tint",
     style: anchor
   }, /*#__PURE__*/React.createElement("div", {
     className: "wrap section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "section-head"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "About"))), /*#__PURE__*/React.createElement("div", {
-    className: "sec-block"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "sub-label",
-    style: {
-      fontSize: "28px"
-    }
-  }, "Founding Team"), /*#__PURE__*/React.createElement("div", {
-    className: "people"
-  }, team.map((p, idx) => /*#__PURE__*/React.createElement("div", {
-    className: "person",
-    key: idx
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "avatar"
-  }, p.img ? /*#__PURE__*/React.createElement("img", {
-    src: p.img,
-    alt: p.nm
-  }) : p.i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "nm"
-  }, p.nm), /*#__PURE__*/React.createElement("div", {
-    className: "role"
-  }, p.role))))), /*#__PURE__*/React.createElement("h3", {
-    className: "sub-label",
-    style: {
-      marginTop: 'var(--space-12)',
-      fontSize: "28px"
-    }
-  }, "Advisors"), /*#__PURE__*/React.createElement("div", {
-    className: "people"
-  }, advisors.map((p, idx) => /*#__PURE__*/React.createElement("div", {
-    className: "person",
-    key: idx
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "avatar"
-  }, p.img ? /*#__PURE__*/React.createElement("img", {
-    src: p.img,
-    alt: p.nm
-  }) : p.i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "nm"
-  }, p.nm), /*#__PURE__*/React.createElement("div", {
-    className: "role"
-  }, p.role)))))))), /*#__PURE__*/React.createElement("section", {
-    id: "contact",
-    className: "wrap section",
-    style: anchor
   }, /*#__PURE__*/React.createElement("div", {
     className: "section-head"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Get Involved"))), /*#__PURE__*/React.createElement("div", {
@@ -993,7 +960,7 @@ function Page({
   }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
     variant: "primary",
     type: "submit"
-  }, "Subscribe"))))))));
+  }, "Subscribe")))))))));
 }
 Object.assign(window, {
   Page
