@@ -5,6 +5,7 @@ function SiteHeader({ current, onNav }) {
   const nav = [
   { id: 'research', label: 'Research' },
   { id: 'standards', label: 'Standards' },
+  { id: 'mission', label: 'Mission' },
   { id: 'about', label: 'About' }];
 
   return (

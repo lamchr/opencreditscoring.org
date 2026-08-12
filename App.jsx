@@ -1,4 +1,4 @@
-const SECTIONS = ['top', 'standards', 'research', 'governance', 'about', 'contact'];
+const SECTIONS = ['top', 'standards', 'research', 'mission', 'about', 'contact'];
 const HEADER_OFFSET = 64;
 
 function App() {

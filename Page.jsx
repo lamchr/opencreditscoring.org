@@ -277,11 +277,11 @@ credit decision is fair, valid, and legally compliant?</p>
         </div>
       </section>
 
-      {/* ── Governance ───────────────────────────────────────── */}
-      <section id="about" className="wrap section" style={{ ...anchor, paddingBottom: 'var(--space-12)' }}>
+      {/* ── Mission ──────────────────────────────────────────── */}
+      <section id="mission" className="wrap section" style={{ ...anchor, paddingBottom: 'var(--space-12)' }}>
         <div className="section-head">
           <div>
-            <h2>About</h2>
+            <h2>Mission</h2>
           </div>
         </div>
         <div className="sec-block">
@@ -323,9 +323,41 @@ credit decision is fair, valid, and legally compliant?</p>
         </div>
       </section>
 
-      {/* ── Contact ───────────────────────────────────────── */}
-      <section id="contact" className="section-band section-band--tint" style={anchor}>
+      {/* ── About ────────────────────────────────────────────── */}
+      <section id="about" className="section-band section-band--tint" style={anchor}>
         <div className="wrap section">
+        <div className="section-head">
+          <div>
+            <h2>About</h2>
+          </div>
+        </div>
+        <div className="sec-block">
+          <h3 className="sub-label" style={{ fontSize: "28px" }}>Founding Team</h3>
+          <div className="people">
+            {team.map((p, idx) => <div className="person" key={idx}>
+                <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
+                <div>
+                  <div className="nm">{p.nm}</div>
+                  <div className="role">{p.role}</div>
+                </div>
+              </div>)}
+          </div>
+          <h3 className="sub-label" style={{ marginTop: 'var(--space-12)', fontSize: "28px" }}>Advisors</h3>
+          <div className="people">
+            {advisors.map((p, idx) => <div className="person" key={idx}>
+                <div className="avatar">{p.img ? <img src={p.img} alt={p.nm} /> : p.i}</div>
+                <div>
+                  <div className="nm">{p.nm}</div>
+                  <div className="role">{p.role}</div>
+                </div>
+              </div>)}
+          </div>
+        </div>
+        </div>
+      </section>
+
+      {/* ── Contact ───────────────────────────────────────── */}
+      <section id="contact" className="wrap section" style={anchor}>
         <div className="section-head">
           <div>
             <h2>Get Involved</h2>
@@ -406,7 +438,6 @@ credit decision is fair, valid, and legally compliant?</p>
                 }
             </div>
           </div>
-        </div>
         </div>
       </section>
 

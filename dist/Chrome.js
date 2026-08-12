@@ -14,6 +14,9 @@ function SiteHeader({
     id: 'standards',
     label: 'Standards'
   }, {
+    id: 'mission',
+    label: 'Mission'
+  }, {
     id: 'about',
     label: 'About'
   }];
