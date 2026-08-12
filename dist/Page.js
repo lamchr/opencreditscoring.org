@@ -330,42 +330,12 @@ function Page({
     img: 'assets/jason-dietrich.jpg',
     role: 'Former Chief, Compliance Analytics\nConsumer Financial Protection Bureau'
   }];
-
-  // ── Temporary placeholders shown in the About section. ──────────────────────
   const team = [{
     i: 'CL',
     nm: 'Chris Lam',
     img: 'assets/chris-lam.jpg',
-    role: 'Founder and CEO\nEpistamai'
-  }, {
-    i: '',
-    nm: 'Member name',
-    role: 'Title · Affiliation'
-  }, {
-    i: '',
-    nm: 'Member name',
-    role: 'Title · Affiliation'
-  }, {
-    i: '',
-    nm: 'Member name',
-    role: 'Title · Affiliation'
-  }];
-  const advisors = [{
-    i: '',
-    nm: 'Advisor name',
-    role: 'Title · Affiliation'
-  }, {
-    i: '',
-    nm: 'Advisor name',
-    role: 'Title · Affiliation'
-  }, {
-    i: '',
-    nm: 'Advisor name',
-    role: 'Title · Affiliation'
-  }, {
-    i: '',
-    nm: 'Advisor name',
-    role: 'Title · Affiliation'
+    role: 'Founder and CEO\nEpistamai',
+    bio: 'Chris Lam is the founder and CEO of Epistamai, an AI startup doing research on algorithmic bias in credit underwriting. He also chairs the IEEE P3591 standard. He previously worked as a data scientist at the Federal Reserve Bank of Chicago, a technology strategist at Hewlett-Packard, and a project leader at Consumer Reports. He holds a B.S.E. in computer science from the University of Pennsylvania, an M.S. in electrical engineering from Columbia University, and an M.B.A. from Northwestern University (Kellogg).'
   }];
   const anchor = {
     scrollMarginTop: 80
@@ -773,40 +743,26 @@ function Page({
       fontSize: "28px"
     }
   }, "Founding Team"), /*#__PURE__*/React.createElement("div", {
-    className: "people"
-  }, team.map((p, idx) => /*#__PURE__*/React.createElement("div", {
-    className: "person",
-    key: idx
+    className: "gov-grid"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "person"
   }, /*#__PURE__*/React.createElement("div", {
     className: "avatar"
-  }, p.img ? /*#__PURE__*/React.createElement("img", {
-    src: p.img,
-    alt: p.nm
-  }) : p.i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, team[0].img ? /*#__PURE__*/React.createElement("img", {
+    src: team[0].img,
+    alt: team[0].nm
+  }) : team[0].i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "nm"
-  }, p.nm), /*#__PURE__*/React.createElement("div", {
+  }, team[0].nm), /*#__PURE__*/React.createElement("div", {
     className: "role"
-  }, p.role))))), /*#__PURE__*/React.createElement("h3", {
-    className: "sub-label",
+  }, team[0].role))), /*#__PURE__*/React.createElement("p", {
     style: {
-      marginTop: 'var(--space-12)',
-      fontSize: "28px"
+      fontSize: 18,
+      lineHeight: 1.65,
+      color: 'var(--ink-700)',
+      margin: 0
     }
-  }, "Advisors"), /*#__PURE__*/React.createElement("div", {
-    className: "people"
-  }, advisors.map((p, idx) => /*#__PURE__*/React.createElement("div", {
-    className: "person",
-    key: idx
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "avatar"
-  }, p.img ? /*#__PURE__*/React.createElement("img", {
-    src: p.img,
-    alt: p.nm
-  }) : p.i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "nm"
-  }, p.nm), /*#__PURE__*/React.createElement("div", {
-    className: "role"
-  }, p.role)))))))), /*#__PURE__*/React.createElement("section", {
+  }, team[0].bio))))), /*#__PURE__*/React.createElement("section", {
     id: "contact",
     className: "wrap section",
     style: anchor
