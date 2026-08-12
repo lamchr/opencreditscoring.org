@@ -738,24 +738,35 @@ function Page({
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "About"))), /*#__PURE__*/React.createElement("div", {
     className: "sec-block"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "gov-grid"
+    className: "gov-grid",
+    style: {
+      alignItems: 'start',
+      gridTemplateColumns: '200px 1fr'
+    }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "person"
+    className: "person",
+    style: {
+      alignItems: 'center',
+      textAlign: 'center'
+    }
   }, /*#__PURE__*/React.createElement("div", {
     className: "avatar",
     style: {
-      width: 180,
-      height: 180,
-      fontSize: 56
+      width: 112,
+      height: 112,
+      fontSize: 36
     }
   }, team[0].img ? /*#__PURE__*/React.createElement("img", {
     src: team[0].img,
     alt: team[0].nm
   }) : team[0].i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "nm"
+    className: "nm",
+    style: {
+      fontSize: 16
+    }
   }, team[0].nm))), /*#__PURE__*/React.createElement("p", {
     style: {
-      fontSize: 18,
+      fontSize: 15,
       lineHeight: 1.65,
       color: 'var(--ink-700)',
       margin: 0
