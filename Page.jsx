@@ -324,10 +324,9 @@ credit decision is fair, valid, and legally compliant?</p>
         <div className="sec-block">
           <div className="gov-grid">
             <div className="person">
-              <div className="avatar">{team[0].img ? <img src={team[0].img} alt={team[0].nm} /> : team[0].i}</div>
+              <div className="avatar" style={{ width: 180, height: 180, fontSize: 56 }}>{team[0].img ? <img src={team[0].img} alt={team[0].nm} /> : team[0].i}</div>
               <div>
                 <div className="nm">{team[0].nm}</div>
-                <div className="role">{team[0].role}</div>
               </div>
             </div>
             <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--ink-700)', margin: 0 }}>{team[0].bio}</p>

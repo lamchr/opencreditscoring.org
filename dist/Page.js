@@ -742,15 +742,18 @@ function Page({
   }, /*#__PURE__*/React.createElement("div", {
     className: "person"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "avatar"
+    className: "avatar",
+    style: {
+      width: 180,
+      height: 180,
+      fontSize: 56
+    }
   }, team[0].img ? /*#__PURE__*/React.createElement("img", {
     src: team[0].img,
     alt: team[0].nm
   }) : team[0].i), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "nm"
-  }, team[0].nm), /*#__PURE__*/React.createElement("div", {
-    className: "role"
-  }, team[0].role))), /*#__PURE__*/React.createElement("p", {
+  }, team[0].nm))), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 18,
       lineHeight: 1.65,
