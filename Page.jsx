@@ -134,7 +134,7 @@ function Page({ onNav }) {
   { i: 'JD', nm: 'Dr. Jason Dietrich', img: 'assets/jason-dietrich.jpg', role: 'Former Chief, Compliance Analytics\nConsumer Financial Protection Bureau' }];
 
   const team = [
-  { i: 'CL', nm: 'Chris Lam', img: 'assets/chris-lam.jpg', role: 'Founder and CEO\nEpistamai', bio: 'Chris Lam is the founder and CEO of Epistamai, an AI startup doing research on algorithmic bias in credit underwriting. He also chairs the IEEE P3591 standard. He previously worked as a data scientist at the Federal Reserve Bank of Chicago, a technology strategist at Hewlett-Packard, and a project leader at Consumer Reports. He holds a B.S.E. in computer science from the University of Pennsylvania, an M.S. in electrical engineering from Columbia University, and an M.B.A. from Northwestern University (Kellogg).' }];
+  { i: 'CL', nm: 'Chris Lam', img: 'assets/chris-lam.jpg', role: 'Founder and CEO\nEpistamai', bio: 'Chris Lam is the founder and CEO of Epistamai, an AI startup doing research on algorithmic bias in credit underwriting. He also chairs the IEEE P3591 standard. He previously worked as a data scientist at the Federal Reserve Bank of Chicago, a technology strategist at Hewlett-Packard, and a project leader at Consumer Reports. He holds a B.S. in computer science from the University of Pennsylvania, an M.S. in electrical engineering from Columbia University, and an M.B.A. from Northwestern University (Kellogg).' }];
 
 
   const anchor = { scrollMarginTop: 80 };
@@ -322,7 +322,6 @@ credit decision is fair, valid, and legally compliant?</p>
           </div>
         </div>
         <div className="sec-block">
-          <h3 className="sub-label" style={{ fontSize: "28px" }}>Founding Team</h3>
           <div className="gov-grid">
             <div className="person">
               <div className="avatar">{team[0].img ? <img src={team[0].img} alt={team[0].nm} /> : team[0].i}</div>

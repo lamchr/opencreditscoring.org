@@ -335,7 +335,7 @@ function Page({
     nm: 'Chris Lam',
     img: 'assets/chris-lam.jpg',
     role: 'Founder and CEO\nEpistamai',
-    bio: 'Chris Lam is the founder and CEO of Epistamai, an AI startup doing research on algorithmic bias in credit underwriting. He also chairs the IEEE P3591 standard. He previously worked as a data scientist at the Federal Reserve Bank of Chicago, a technology strategist at Hewlett-Packard, and a project leader at Consumer Reports. He holds a B.S.E. in computer science from the University of Pennsylvania, an M.S. in electrical engineering from Columbia University, and an M.B.A. from Northwestern University (Kellogg).'
+    bio: 'Chris Lam is the founder and CEO of Epistamai, an AI startup doing research on algorithmic bias in credit underwriting. He also chairs the IEEE P3591 standard. He previously worked as a data scientist at the Federal Reserve Bank of Chicago, a technology strategist at Hewlett-Packard, and a project leader at Consumer Reports. He holds a B.S. in computer science from the University of Pennsylvania, an M.S. in electrical engineering from Columbia University, and an M.B.A. from Northwestern University (Kellogg).'
   }];
   const anchor = {
     scrollMarginTop: 80
@@ -737,12 +737,7 @@ function Page({
     className: "section-head"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "About"))), /*#__PURE__*/React.createElement("div", {
     className: "sec-block"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "sub-label",
-    style: {
-      fontSize: "28px"
-    }
-  }, "Founding Team"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "gov-grid"
   }, /*#__PURE__*/React.createElement("div", {
     className: "person"
