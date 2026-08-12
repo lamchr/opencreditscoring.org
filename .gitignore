@@ -19,3 +19,6 @@ preview.html
 
 # Claude Code local settings
 .claude/
+
+# CI build artifact (assembled + prerendered by the deploy workflow)
+_site/

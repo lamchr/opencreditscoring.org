@@ -41,6 +41,9 @@ jobs:
           cp -R assets dist _ds _site/
           if [ -d uploads ]; then cp -R uploads _site/; fi
 
+      - name: Prerender static HTML
+        run: npm run prerender -- _site
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
