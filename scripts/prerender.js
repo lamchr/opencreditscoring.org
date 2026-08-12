@@ -47,7 +47,7 @@ async function main() {
   const server = await serveDir(targetDir);
   const port = server.address().port;
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   try {
     const page = await browser.newPage();
     await page.goto(`http://127.0.0.1:${port}/index.html`, { waitUntil: 'networkidle0' });
