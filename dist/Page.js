@@ -574,7 +574,18 @@ function Page({
     style: {
       fontSize: "15px"
     }
-  }, "IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.")), /*#__PURE__*/React.createElement("figure", {
+  }, "IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 'var(--space-4)'
+    }
+  }, /*#__PURE__*/React.createElement(Button, {
+    variant: "secondary",
+    href: "assets/ieee-p3591-antidiscrimination-examples.pdf",
+    iconRight: /*#__PURE__*/React.createElement(LucideIcon, {
+      name: "file-text",
+      size: 16
+    })
+  }, "Modeling Illegal Discrimination Using the IEEE P3591 Standard"))), /*#__PURE__*/React.createElement("figure", {
     className: "figure std-fig"
   }, /*#__PURE__*/React.createElement("div", {
     className: "plot",

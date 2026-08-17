@@ -256,6 +256,9 @@ function Page({ onNav }) {
             <p className="std-q" style={{ fontSize: "19px" }}>How can organizations determine whether an AI
 credit decision is fair, valid, and legally compliant?</p>
             <p className="std-d" style={{ fontSize: "15px" }}>IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.</p>
+            <div style={{ marginTop: 'var(--space-4)' }}>
+              <Button variant="secondary" href="assets/ieee-p3591-antidiscrimination-examples.pdf" iconRight={<LucideIcon name="file-text" size={16} />}>Modeling Illegal Discrimination Using the IEEE P3591 Standard</Button>
+            </div>
           </div>
           <figure className="figure std-fig">
             <div className="plot" style={{ height: 200 }}><CausalBayesNet nodes={sfNodes} /></div>
