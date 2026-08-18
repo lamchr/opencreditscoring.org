@@ -248,11 +248,7 @@ function Page({ onNav }) {
         </div>
         <div className="std-single">
           <div className="std-single-body">
-            <div className="std-single-head">
-              <Tag variant="blue" mono square>IEEE P3591</Tag>
-              <Tag variant="warn" dot>in development</Tag>
-            </div>
-            <h3 style={{ fontSize: "28px" }}><a href="https://standards.ieee.org/ieee/3591/12101/" target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "none" }}>Fair Decision Making Through Causal Analysis</a></h3>
+            <h3 style={{ fontSize: "28px" }}><a href="https://standards.ieee.org/ieee/3591/12101/" target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "none" }}>IEEE P3591: Standard for Fair Decision Making Through Causal Analysis</a></h3>
             <p className="std-q" style={{ fontSize: "19px" }}>How can organizations determine whether an AI
 credit decision is fair, valid, and legally compliant?</p>
             <p className="std-d" style={{ fontSize: "15px" }}>IEEE P3591 establishes a common framework for evaluating AI systems by connecting concepts from anti-discrimination law, causal inference, and machine learning.</p>

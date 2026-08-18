@@ -543,16 +543,7 @@ function Page({
     className: "std-single"
   }, /*#__PURE__*/React.createElement("div", {
     className: "std-single-body"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "std-single-head"
-  }, /*#__PURE__*/React.createElement(Tag, {
-    variant: "blue",
-    mono: true,
-    square: true
-  }, "IEEE P3591"), /*#__PURE__*/React.createElement(Tag, {
-    variant: "warn",
-    dot: true
-  }, "in development")), /*#__PURE__*/React.createElement("h3", {
+  }, /*#__PURE__*/React.createElement("h3", {
     style: {
       fontSize: "28px"
     }
@@ -564,7 +555,7 @@ function Page({
       color: "inherit",
       textDecoration: "none"
     }
-  }, "Fair Decision Making Through Causal Analysis")), /*#__PURE__*/React.createElement("p", {
+  }, "IEEE P3591: Standard for Fair Decision Making Through Causal Analysis")), /*#__PURE__*/React.createElement("p", {
     className: "std-q",
     style: {
       fontSize: "19px"
