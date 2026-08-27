@@ -917,7 +917,7 @@ function Page({
       color: 'var(--ink-900)',
       margin: 0
     }
-  }, "Newsletter Sign Up"), /*#__PURE__*/React.createElement("p", {
+  }, "Mailing List Sign Up"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 17,
       lineHeight: 1.65,

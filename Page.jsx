@@ -388,7 +388,7 @@ credit decision is fair, valid, and legally compliant?</p>
         <div className="sec-block" style={{ marginTop: 'var(--space-12)', borderTop: '1px solid var(--line)', paddingTop: 'var(--space-12)' }}>
           <div className="gov-grid">
             <div>
-              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Newsletter Sign Up</h3>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 28, letterSpacing: '-0.01em', lineHeight: 1.12, color: 'var(--ink-900)', margin: 0 }}>Mailing List Sign Up</h3>
               <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--ink-700)', marginTop: 16, maxWidth: '42ch' }}>Receive updates when we publish new research, release draft standards, announce workshops, or open standards for public comment. No marketing.</p>
             </div>
             <div>
