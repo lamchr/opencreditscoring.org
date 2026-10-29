@@ -46,9 +46,6 @@ function SiteFooter() {
           </p>
         </div>
       </div>
-      <div className="wrap colophon">
-        <span>© 2026 Open Decisions Consortium</span>
-      </div>
     </footer>);
 
 }
